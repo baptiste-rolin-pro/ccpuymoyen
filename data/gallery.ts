@@ -1,0 +1,31 @@
+import type { PhotoKey } from "./media";
+
+/** Ordre d'affichage de la galerie (page /galerie et aperçu en page d'accueil). */
+export const gallery: PhotoKey[] = [
+  "col-croix-saint-robert-2025",
+  "maillot-2026-trio",
+  "vtt-mb-race-2024",
+  "espagne-alt-de-la-mussara-2026",
+  "auvergne-route-2025",
+  "robin-chemin-compostelle-2026",
+  "presentation-maillot-2026",
+  "cyclo-cross-patrice-moreau",
+  "auvergne-groupe-2025",
+  "ultra-bacchus-chateau-2025",
+  "vtt-rando-fouquebrune-2024",
+  "sortie-saison-2026",
+  "rando-anniversaire-40-ans-2025",
+  "christian-col-aubisque-2026",
+  "auvergne-montee-2025",
+  "maillot-2026-dos",
+  "christian-race-across-france-2025",
+  "ultra-bacchus-nuit-2025",
+  "repas-fin-annee-2023",
+  "cycliste-campagne",
+  "auvergne-la-bourboule-2025",
+  "ultra-bacchus-vignoble-2025",
+  "perigordine-2024",
+  "sortie-groupe-2-2024",
+  "maillot-collector-2017",
+  "paul-poux-2023",
+];
