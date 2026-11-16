@@ -177,15 +177,15 @@ export default function ClubPage() {
             intro="Présenté en mars 2026, le nouveau maillot reste fidèle aux couleurs rouge, blanc et noir du club et porte les logos de nos partenaires."
           />
           <div className="mt-12 grid gap-3 sm:grid-cols-2 lg:grid-cols-12">
-            <figure className="relative aspect-[4/3] overflow-hidden bg-stone lg:col-span-5" data-reveal>
+            <figure className="relative aspect-[4/3] overflow-hidden bg-stone lg:col-span-5 lg:aspect-auto lg:h-[24rem]" data-reveal>
               <Photo k="maillot-2026-face" fill sizes="(min-width: 1024px) 40vw, 50vw" className="object-cover" />
               <figcaption className="absolute bottom-0 left-0 bg-ink px-3 py-1.5 text-sm text-white">Face</figcaption>
             </figure>
-            <figure className="relative aspect-[4/3] overflow-hidden bg-stone lg:col-span-4" data-reveal>
+            <figure className="relative aspect-[4/3] overflow-hidden bg-stone lg:col-span-4 lg:aspect-auto lg:h-[24rem]" data-reveal>
               <Photo k="maillot-2026-dos" fill sizes="(min-width: 1024px) 33vw, 50vw" className="object-cover" />
               <figcaption className="absolute bottom-0 left-0 bg-ink px-3 py-1.5 text-sm text-white">Dos</figcaption>
             </figure>
-            <figure className="relative aspect-[4/3] overflow-hidden bg-stone sm:col-span-2 lg:col-span-3 lg:aspect-auto" data-reveal>
+            <figure className="relative aspect-[4/3] overflow-hidden bg-stone sm:col-span-2 lg:col-span-3 lg:aspect-auto lg:h-[24rem]" data-reveal>
               <Photo k="maillot-collector-2017" fill sizes="(min-width: 1024px) 25vw, 100vw" className="object-contain bg-white p-3" />
               <figcaption className="absolute bottom-0 left-0 bg-red px-3 py-1.5 text-sm text-white">Collector 2017</figcaption>
             </figure>

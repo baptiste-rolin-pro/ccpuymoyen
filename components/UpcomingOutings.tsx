@@ -2,17 +2,22 @@
 
 import { useEffect, useState } from "react";
 import { CalendarClock } from "lucide-react";
-import { dayNumber, formatLongDate, monthShort, todayISO, upcomingDays, type OutingDay } from "@/lib/sorties";
+import { dayNumber, formatLongDate, monthShort, todayISO } from "@/lib/dates";
+import type { OutingDay } from "@/lib/sorties";
 import { OutingRoute } from "./OutingRoute";
 
 /**
  * Prochains samedis du calendrier officiel.
- * Le rendu initial est calculé à la génération du site, puis recalculé dans
- * le navigateur avec la date du jour : la liste reste à jour sans recompiler.
+ * `days` contient toutes les sorties restantes à la date de génération du site
+ * (sans les itinéraires détaillés, pour alléger la page). Le navigateur filtre
+ * ensuite avec la date du jour : la liste reste à jour sans recompiler.
  */
-export function UpcomingOutings({ initial, count = 3 }: { initial: OutingDay[]; count?: number }) {
-  const [days, setDays] = useState(initial);
-  useEffect(() => setDays(upcomingDays(todayISO(), count)), [count]);
+export function UpcomingOutings({ days: all, count = 3 }: { days: OutingDay[]; count?: number }) {
+  const [days, setDays] = useState(all.slice(0, count));
+  useEffect(() => {
+    const t = todayISO();
+    setDays(all.filter((d) => d.date >= t).slice(0, count));
+  }, [all, count]);
 
   if (!days.length) {
     return (

@@ -2,7 +2,8 @@
 
 import { useEffect, useMemo, useState } from "react";
 import { ChevronDown } from "lucide-react";
-import { formatLongDate, formatMonth, outingDays, todayISO, type OutingDay } from "@/lib/sorties";
+import { formatLongDate, formatMonth, todayISO } from "@/lib/dates";
+import { outingDays, type OutingDay } from "@/lib/sorties";
 import { OutingRoute } from "./OutingRoute";
 
 type Filter = "upcoming" | "all";

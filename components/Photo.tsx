@@ -18,8 +18,8 @@ export function Photo({ k, sizes, className, priority, fill, alt }: Props) {
     alt: alt ?? p.alt,
     sizes,
     priority,
-    placeholder: "blur" as const,
-    blurDataURL: p.blur,
+    // pas de placeholder flouté sur les images prioritaires (LCP) : rendu immédiat
+    ...(priority ? {} : { placeholder: "blur" as const, blurDataURL: p.blur }),
     className,
     style: p.focus ? { objectPosition: p.focus } : undefined,
   };

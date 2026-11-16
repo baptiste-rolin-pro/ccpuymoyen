@@ -2,12 +2,15 @@ import Link from "next/link";
 import { ArrowRight, Clock, Download, HardHat, MapPin, Navigation } from "lucide-react";
 import { SectionHeading } from "@/components/SectionHeading";
 import { UpcomingOutings } from "@/components/UpcomingOutings";
-import { calendarSource, todayISO, upcomingDays } from "@/lib/sorties";
+import { calendarSource, outingDays, todayISO } from "@/lib/sorties";
 import { mapsUrl, site } from "@/data/site";
 import { withBase } from "@/lib/format";
 
 export function NextRides() {
-  const initial = upcomingDays(todayISO(), 3);
+  // sorties restantes à la date de génération, sans itinéraires (allège le JS client)
+  const remaining = outingDays()
+    .filter((d) => d.date >= todayISO())
+    .map((d) => ({ ...d, outings: d.outings.map((o) => ({ ...o, itinerary: "" })) }));
   return (
     <section aria-labelledby="sorties-title" className="speed-lines-dark bg-stone py-20 sm:py-28 lg:py-32">
       <div className="wrap">
@@ -72,7 +75,7 @@ export function NextRides() {
                 <Download aria-hidden size={16} /> Parcours 2026 (PDF, 119 Ko)
               </a>
             </div>
-            <UpcomingOutings initial={initial} />
+            <UpcomingOutings days={remaining} />
             <p className="mt-4 text-sm text-mute">
               Source : calendrier officiel « {calendarSource.title} » ({calendarSource.version}). Le parcours du mercredi
               est fixé au départ.

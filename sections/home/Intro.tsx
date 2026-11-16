@@ -34,7 +34,7 @@ export function Intro() {
           <p className="absolute left-0 top-6 -translate-x-1 bg-red px-4 py-2 font-display text-lg font-bold uppercase tracking-[0.14em] text-white">
             Depuis {site.foundingYear}
           </p>
-          <p className="mt-4 max-w-[52%] text-sm text-mute">Les Rouges et Blancs au col de la Croix Saint-Robert (1451 m), Ascension 2025.</p>
+          <p className="mt-4 max-w-[46%] text-sm text-mute">Les Rouges et Blancs au col de la Croix Saint-Robert (1451 m), Ascension 2025.</p>
         </div>
 
         {/* Texte */}
