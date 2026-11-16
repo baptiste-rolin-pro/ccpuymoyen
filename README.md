@@ -85,22 +85,21 @@ Les parcours ne sont **pas téléchargeables publiquement** : la page « Nos sor
 - La session dure 30 jours (cookie `httpOnly`, signé). Retirer un membre de la liste coupe son accès immédiatement.
 - Les tentatives de connexion sont limitées (8 échecs par adresse IP et par 15 minutes).
 
-**Mise en route (une seule fois)** — dans Vercel, *Settings → Environment Variables* :
-1. `AUTH_SECRET` : une clé aléatoire d'au moins 32 caractères, générée avec :
+**Comptes membres** : ils sont enregistrés dans `data/members.json` (e-mail, nom, mot de passe haché — jamais en clair). Aucune configuration Vercel n'est nécessaire : la connexion fonctionne dès le déploiement.
 
-```bash
-node -e "console.log(require('crypto').randomBytes(32).toString('base64url'))"
-```
-
-2. `MEMBERS` : la liste des comptes (voir ci-dessous), puis redéployer.
-
-**Ajouter ou modifier un membre** (sur un ordinateur où le projet est installé) :
+Ajouter ou modifier un membre (sur un ordinateur où le projet est installé) :
 
 ```bash
 npm run membre:ajouter -- prenom.nom@exemple.fr "Prénom Nom"
 ```
 
-Le script demande un mot de passe (ou en génère un si on laisse vide) et affiche la nouvelle valeur complète de `MEMBERS` à coller dans Vercel, puis redéployer. Pour retirer un membre, supprimer son entrée du JSON. En local, utiliser la ligne « .env.local » affichée par le script (les `$` y sont échappés, ce qui n'est pas nécessaire dans Vercel).
+```bash
+git add data/members.json && git commit -m "Ajout membre" && git push
+```
+
+Le script demande un mot de passe (ou en génère un si on laisse vide), puis Vercel redéploie automatiquement après le `git push`. Pour retirer un membre, supprimer son bloc dans `data/members.json` et pousser. Le fichier peut aussi être modifié directement sur GitHub.
+
+Recommandé : définir dans Vercel une variable `AUTH_SECRET` (clé aléatoire de 32 caractères ou plus) pour signer les sessions ; sans elle, une clé dérivée des comptes est utilisée. La variable `MEMBERS` (même format JSON) reste acceptée en complément du fichier.
 
 Limites de cette V1, sans base de données : pas de « mot de passe oublié » ni de changement de mot de passe par le membre (le bureau en refixe un avec le script). Pour une gestion autonome des comptes, prévoir un service d'authentification (Clerk, Supabase Auth…).
 
@@ -110,8 +109,8 @@ Importer le dépôt GitHub dans Vercel sans changer les réglages (préréglage 
 
 | Variable | Rôle | Obligatoire |
 | --- | --- | --- |
-| `AUTH_SECRET` | clé de signature des sessions membres | oui (sinon espace membres désactivé) |
-| `MEMBERS` | comptes membres (JSON) | oui (idem) |
+| `AUTH_SECRET` | clé de signature des sessions membres | recommandé |
+| `MEMBERS` | comptes membres supplémentaires (JSON) | non (comptes dans `data/members.json`) |
 | `NEXT_PUBLIC_CONTACT_ENDPOINT` | service d'envoi du formulaire de contact | non (formulaire masqué) |
 | `NEXT_PUBLIC_SITE_URL` | URL publique (canonical, sitemap, Open Graph) | non (défaut `https://www.ccpuymoyen.com`) |
 

@@ -1,18 +1,21 @@
 /**
  * Espace membres — authentification sans base de données.
  *
- * - Les comptes sont déclarés dans la variable d'environnement MEMBERS (JSON) :
- *     [{"email":"prenom.nom@exemple.fr","name":"Prénom","hash":"$2b$12$..."}]
- *   Les mots de passe ne sont jamais stockés en clair (hachage bcrypt).
- *   Générer une entrée : npm run membre:ajouter -- prenom.nom@exemple.fr "Prénom Nom"
- * - La session est un jeton signé (HS256, clé AUTH_SECRET) stocké dans un cookie
- *   httpOnly. Retirer un membre de MEMBERS invalide immédiatement son accès.
+ * - Les comptes sont dans data/members.json (et, en option, dans la variable
+ *   d'environnement MEMBERS, même format). Mots de passe hachés (bcrypt), jamais en clair.
+ *   Ajouter un membre : npm run membre:ajouter -- prenom.nom@exemple.fr "Prénom Nom"
+ *   puis commiter/pousser : Vercel redéploie automatiquement.
+ * - La session est un jeton signé (HS256) stocké dans un cookie httpOnly. Clé :
+ *   AUTH_SECRET si elle est définie (recommandé), sinon une clé dérivée des
+ *   hachages des comptes. Retirer un membre invalide immédiatement son accès.
  *
  * Ce module ne doit être importé que côté serveur.
  */
 import { cookies } from "next/headers";
 import { SignJWT, jwtVerify } from "jose";
 import bcrypt from "bcryptjs";
+import { createHash } from "node:crypto";
+import fileMembers from "@/data/members.json";
 
 export type Member = { email: string; name: string; hash: string };
 export type Session = { email: string; name: string };
@@ -20,23 +23,39 @@ export type Session = { email: string; name: string };
 const COOKIE = "ccp_membre";
 const MAX_AGE = 60 * 60 * 24 * 30; // 30 jours
 
-function secretKey() {
-  const s = process.env.AUTH_SECRET;
-  return s && s.length >= 32 ? new TextEncoder().encode(s) : null;
+function normalize(list: unknown): Member[] {
+  if (!Array.isArray(list)) return [];
+  return (list as Member[])
+    .filter((m) => m && typeof m.email === "string" && typeof m.hash === "string" && m.hash.startsWith("$2"))
+    .map((m) => ({ email: m.email.trim().toLowerCase(), name: (m.name || m.email).trim(), hash: m.hash }));
 }
 
 export function loadMembers(): Member[] {
-  const raw = process.env.MEMBERS;
-  if (!raw) return [];
-  try {
-    const list = JSON.parse(raw) as Member[];
-    return list
-      .filter((m) => m && typeof m.email === "string" && typeof m.hash === "string" && m.hash.startsWith("$2"))
-      .map((m) => ({ email: m.email.trim().toLowerCase(), name: (m.name || m.email).trim(), hash: m.hash }));
-  } catch {
-    console.error("[auth] variable MEMBERS invalide (JSON attendu)");
-    return [];
+  let fromEnv: Member[] = [];
+  const raw = process.env.MEMBERS?.trim();
+  if (raw) {
+    try {
+      // tolère une valeur collée entre guillemets simples
+      fromEnv = normalize(JSON.parse(raw.replace(/^'(.*)'$/s, "$1")));
+    } catch {
+      console.error("[auth] variable MEMBERS ignorée : JSON invalide");
+    }
   }
+  // la variable d'environnement est prioritaire en cas de doublon d'e-mail
+  const byEmail = new Map<string, Member>();
+  for (const m of [...normalize(fileMembers), ...fromEnv]) byEmail.set(m.email, m);
+  return [...byEmail.values()];
+}
+
+function secretKey() {
+  const s = process.env.AUTH_SECRET?.trim();
+  if (s && s.length >= 32) return new TextEncoder().encode(s);
+  // Repli sans configuration : clé dérivée des hachages des comptes (connus seulement
+  // du dépôt privé et de l'hébergeur). Définir AUTH_SECRET reste recommandé.
+  const members = loadMembers();
+  if (!members.length) return null;
+  const seed = "ccp-session-v1:" + members.map((m) => m.hash).sort().join("|");
+  return new Uint8Array(createHash("sha256").update(seed).digest());
 }
 
 /** L'espace membres est-il utilisable (clé de session + au moins un compte) ? */

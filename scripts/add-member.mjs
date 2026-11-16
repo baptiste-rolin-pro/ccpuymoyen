@@ -1,28 +1,20 @@
-// Crée ou met à jour un compte de l'espace membres.
+// Ajoute ou met à jour un compte de l'espace membres dans data/members.json.
 //   npm run membre:ajouter -- prenom.nom@exemple.fr "Prénom Nom"
-// Le mot de passe est demandé de façon masquée (ou généré s'il est laissé vide).
-// Le script affiche la nouvelle valeur complète de la variable MEMBERS à coller
-// dans Vercel (Settings → Environment Variables), en partant de la valeur actuelle
-// de MEMBERS si elle est présente dans .env.local.
+// Le mot de passe est demandé (saisie masquée) ou généré s'il est laissé vide.
+// Ensuite : git add data/members.json && git commit && git push → Vercel redéploie.
+// Retirer un membre : supprimer son bloc dans data/members.json, puis commiter.
 import bcrypt from "bcryptjs";
 import crypto from "node:crypto";
 import fs from "node:fs";
 import readline from "node:readline";
 
+const FILE = "data/members.json";
 const [email, ...nameParts] = process.argv.slice(2);
 if (!email || !email.includes("@")) {
   console.error('Usage : npm run membre:ajouter -- prenom.nom@exemple.fr "Prénom Nom"');
   process.exit(1);
 }
 const name = nameParts.join(" ") || email;
-
-function readEnvMembers() {
-  if (process.env.MEMBERS) return process.env.MEMBERS;
-  if (!fs.existsSync(".env.local")) return "[]";
-  const line = fs.readFileSync(".env.local", "utf8").split(/\r?\n/).find((l) => l.startsWith("MEMBERS="));
-  if (!line) return "[]";
-  return line.slice("MEMBERS=".length).replace(/^'(.*)'$/, "$1").replaceAll("\\$", "$");
-}
 
 function askHidden(question) {
   return new Promise((resolve) => {
@@ -43,13 +35,12 @@ if (password.length < 10) {
   process.exit(1);
 }
 
-const members = JSON.parse(readEnvMembers()).filter((m) => m.email.toLowerCase() !== email.toLowerCase());
-members.push({ email: email.toLowerCase(), name, hash: bcrypt.hashSync(password, 12) });
+const members = fs.existsSync(FILE) ? JSON.parse(fs.readFileSync(FILE, "utf8")) : [];
+const list = members.filter((m) => m.email.toLowerCase() !== email.toLowerCase());
+list.push({ email: email.toLowerCase(), name, hash: bcrypt.hashSync(password, 12) });
+list.sort((a, b) => a.name.localeCompare(b.name, "fr"));
+fs.writeFileSync(FILE, JSON.stringify(list, null, 2) + "\n");
 
-console.log(`\nCompte prêt pour ${name} <${email.toLowerCase()}>.`);
+console.log(`\nCompte enregistré pour ${name} <${email.toLowerCase()}> (${list.length} membre(s) dans ${FILE}).`);
 if (generated) console.log(`Mot de passe généré (à transmettre au membre) : ${password}`);
-console.log("\nNouvelle valeur de la variable MEMBERS (" + members.length + " compte(s)) :\n");
-console.log(JSON.stringify(members));
-// Next.js interprète les « $ » dans .env.local : ils doivent y être échappés (pas dans Vercel)
-console.log("\nEn local, ligne à mettre dans .env.local :\n");
-console.log("MEMBERS='" + JSON.stringify(members).replaceAll("$", "\\$") + "'");
+console.log("\nPour l'activer en ligne : git add data/members.json && git commit -m \"Ajout membre\" && git push");
