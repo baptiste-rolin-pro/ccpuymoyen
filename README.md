@@ -85,7 +85,9 @@ Le dossier `out/` contient tout le site. Variables d'environnement utiles :
 | `NEXT_PUBLIC_BASE_PATH` | sous-dossier de publication (ex. `/ccp-puymoyen` pour un site GitHub Pages de projet) | vide |
 | `NEXT_PUBLIC_CONTACT_ENDPOINT` | service d'envoi du formulaire | vide (formulaire masqué) |
 
-**Recommandé : Netlify ou Cloudflare Pages** (gratuits, HTTPS, vraies redirections 301 via `out/_redirects`). Commande de build `npm run build`, dossier publié `out`.
+**Vercel** : importer le dépôt GitHub dans Vercel, sans rien changer aux réglages (le préréglage Next.js est détecté, l'export statique aussi). Les redirections 301 des anciennes URL sont déclarées dans `vercel.json`, généré à partir de `data/redirects.json` : après toute modification de ce fichier, lancer `npm run redirects:vercel` puis commiter. Ajouter ensuite le domaine `www.ccpuymoyen.com` dans *Settings → Domains* et les variables d'environnement (`NEXT_PUBLIC_CONTACT_ENDPOINT`…) dans *Settings → Environment Variables*.
+
+**Autres hébergeurs : Netlify ou Cloudflare Pages** (gratuits, HTTPS, vraies redirections 301 via `out/_redirects`). Commande de build `npm run build`, dossier publié `out`.
 
 **Hébergement mutualisé Apache (OVH, o2switch…)** : envoyer le contenu de `out/` (y compris le fichier caché `.htaccess`) par FTP.
 
