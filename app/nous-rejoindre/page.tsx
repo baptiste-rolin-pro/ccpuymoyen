@@ -21,7 +21,7 @@ export const metadata: Metadata = pageMetadata({
 const reasons = [
   { t: "Tous les niveaux", d: "Deux groupes le samedi et des coéquipiers pour chaque pratique, du loisir à la compétition." },
   { t: "Route, VTT, ultra", d: "Routiers, vététistes, cyclo-crossmen et adeptes de longues distances roulent sous le même maillot." },
-  { t: "Des parcours tout prêts", d: "Un calendrier annuel de parcours autour d'Angoulême, avec les tracés Garmin." },
+  { t: "Des parcours tout prêts", d: "Un calendrier annuel de parcours autour d'Angoulême, à télécharger dans l'espace membres." },
   { t: "La convivialité", d: "Séjours, repas de fin d'année, soirées et randonnées : le vélo, mais pas seulement." },
 ];
 

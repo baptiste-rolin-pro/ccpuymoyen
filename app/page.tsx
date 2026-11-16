@@ -20,6 +20,9 @@ export const metadata: Metadata = {
   title: { absolute: "Cyclo Club de Puymoyen — Club de cyclisme près d'Angoulême" },
 };
 
+// régénérée toutes les heures (prochaines sorties)
+export const revalidate = 3600;
+
 export default function HomePage() {
   return (
     <>

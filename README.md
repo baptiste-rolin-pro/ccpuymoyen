@@ -1,7 +1,7 @@
 # Cyclo Club de Puymoyen — site web (V1 de la refonte)
 
 Site vitrine du Cyclo Club de Puymoyen (« les Rouges et Blancs »), club cycliste UFOLEP fondé en 1985 près d'Angoulême.
-Next.js 16 (App Router) · TypeScript · Tailwind CSS 4 · export **100 % statique** (aucun serveur requis).
+Next.js 16 (App Router) · TypeScript · Tailwind CSS 4 · hébergé sur **Vercel**. Les pages publiques sont pré-générées ; un **espace membres** protégé (connexion + téléchargement des parcours) s'exécute côté serveur.
 
 - Audit de l'ancien site : [`AUDIT_SITE_ACTUEL.md`](AUDIT_SITE_ACTUEL.md)
 - Redirections des anciennes URL : [`PLAN_REDIRECTIONS.md`](PLAN_REDIRECTIONS.md)
@@ -28,8 +28,8 @@ npm run build
 npm start
 ```
 
-`npm run build` enchaîne : génération des images optimisées → `next build` (dossier `out/`) → génération des redirections.
-`npm run check:links` vérifie ensuite qu'aucun lien interne du dossier `out/` n'est cassé, et `npm run lint` lance le contrôle TypeScript.
+`npm run build` génère d'abord les images optimisées puis lance `next build`. `npm run lint` lance le contrôle TypeScript.
+Pour tester l'espace membres en local, copier `.env.example` en `.env.local` et le compléter (voir « Espace membres »).
 
 ## Structure
 
@@ -40,7 +40,8 @@ components/     composants réutilisables (header, footer, galerie/lightbox, cal
 data/           CONTENUS ÉDITABLES (voir ci-dessous)
 lib/            utilitaires (SEO, dates, calendrier, loader d'images, polices)
 assets/photos/  photos originales (non publiées telles quelles)
-public/         fichiers publiés : logos, partenaires, PDF, images générées (public/img)
+public/         fichiers publiés : logos, partenaires, images générées (public/img)
+private/        documents RÉSERVÉS AUX MEMBRES (jamais publiés en accès direct)
 scripts/        optimisation des images, redirections, contrôle des liens
 styles/         design system (tokens de couleur, typographie, motifs, animations)
 ```
@@ -52,7 +53,7 @@ Tous les contenus sont dans `data/` : il suffit d'éditer le fichier, puis de re
 | Je veux… | Fichier |
 | --- | --- |
 | Ajouter une actualité | `data/news.ts` — copier un bloc, changer `slug` (unique), `date` (AAAA-MM-JJ), `title`, `excerpt`, `cover`, `body` |
-| Mettre à jour le calendrier des samedis | `data/sorties-2026.json` (une entrée par parcours : date, groupes, nom, km, D+, lien Garmin, itinéraire) + déposer le PDF dans `public/documents/` |
+| Mettre à jour le calendrier des samedis | `data/sorties-2026.json` (une entrée par parcours : date, groupes, nom, km, D+, itinéraire — consultation publique, aucun lien de tracé) + déposer le PDF dans `private/` et le déclarer dans `data/member-documents.ts` |
 | Modifier horaires, adresse, réseaux sociaux, e-mail | `data/site.ts` |
 | Ajouter / retirer un partenaire | `data/partners.ts` + logo dans `public/partners/` |
 | Ajouter une photo | déposer le fichier dans `assets/photos/` (nom en minuscules avec tirets), l'ajouter dans `data/media.ts` avec son texte alternatif, puis éventuellement dans `data/gallery.ts` |
@@ -65,7 +66,7 @@ Les photos sont converties automatiquement en WebP (480, 828, 1200 et 1920 px) d
 
 ## Formulaire de contact
 
-Un site statique ne peut pas envoyer d'e-mail lui-même. Le formulaire est prêt, mais **il ne s'affiche que s'il est relié à un service d'envoi** (gratuits pour un petit volume : Formspree, Web3Forms, Basin…).
+Le site n'envoie pas d'e-mail lui-même. Le formulaire est prêt, mais **il ne s'affiche que s'il est relié à un service d'envoi** (gratuits pour un petit volume : Formspree, Web3Forms, Basin…).
 1. Créer un formulaire chez l'un de ces services avec l'adresse e-mail du club.
 2. Indiquer l'URL d'envoi fournie dans un fichier `.env.local` (et dans les variables de l'hébergeur) :
 
@@ -75,25 +76,48 @@ NEXT_PUBLIC_CONTACT_ENDPOINT=https://formspree.io/f/votre-identifiant
 
 Sans cette variable, la page « Nous rejoindre » propose à la place le contact via Facebook et le rendez-vous au départ des sorties (aucun faux formulaire).
 
-## Déploiement
+## Espace membres
 
-Le dossier `out/` contient tout le site. Variables d'environnement utiles :
+Les parcours ne sont **pas téléchargeables publiquement** : la page « Nos sorties » permet seulement de les consulter (prochain samedi mis en avant, calendrier, itinéraires), sans PDF ni tracé. Le document officiel est téléchargeable uniquement dans l'espace membres (`/espace-membre/`), après connexion.
 
-| Variable | Rôle | Défaut |
+- Les fichiers réservés sont dans `private/` et listés dans `data/member-documents.ts` ; ils ne sont servis que par une route qui vérifie la session (`401` sinon).
+- Les comptes sont créés par le bureau (pas d'inscription libre). Les mots de passe sont stockés hachés (bcrypt), jamais en clair.
+- La session dure 30 jours (cookie `httpOnly`, signé). Retirer un membre de la liste coupe son accès immédiatement.
+- Les tentatives de connexion sont limitées (8 échecs par adresse IP et par 15 minutes).
+
+**Mise en route (une seule fois)** — dans Vercel, *Settings → Environment Variables* :
+1. `AUTH_SECRET` : une clé aléatoire d'au moins 32 caractères, générée avec :
+
+```bash
+node -e "console.log(require('crypto').randomBytes(32).toString('base64url'))"
+```
+
+2. `MEMBERS` : la liste des comptes (voir ci-dessous), puis redéployer.
+
+**Ajouter ou modifier un membre** (sur un ordinateur où le projet est installé) :
+
+```bash
+npm run membre:ajouter -- prenom.nom@exemple.fr "Prénom Nom"
+```
+
+Le script demande un mot de passe (ou en génère un si on laisse vide) et affiche la nouvelle valeur complète de `MEMBERS` à coller dans Vercel, puis redéployer. Pour retirer un membre, supprimer son entrée du JSON. En local, utiliser la ligne « .env.local » affichée par le script (les `$` y sont échappés, ce qui n'est pas nécessaire dans Vercel).
+
+Limites de cette V1, sans base de données : pas de « mot de passe oublié » ni de changement de mot de passe par le membre (le bureau en refixe un avec le script). Pour une gestion autonome des comptes, prévoir un service d'authentification (Clerk, Supabase Auth…).
+
+## Déploiement (Vercel)
+
+Importer le dépôt GitHub dans Vercel sans changer les réglages (préréglage Next.js détecté). Chaque push sur `main` redéploie le site.
+
+| Variable | Rôle | Obligatoire |
 | --- | --- | --- |
-| `NEXT_PUBLIC_SITE_URL` | URL publique (canonical, sitemap, Open Graph) | `https://www.ccpuymoyen.com` |
-| `NEXT_PUBLIC_BASE_PATH` | sous-dossier de publication (ex. `/ccp-puymoyen` pour un site GitHub Pages de projet) | vide |
-| `NEXT_PUBLIC_CONTACT_ENDPOINT` | service d'envoi du formulaire | vide (formulaire masqué) |
+| `AUTH_SECRET` | clé de signature des sessions membres | oui (sinon espace membres désactivé) |
+| `MEMBERS` | comptes membres (JSON) | oui (idem) |
+| `NEXT_PUBLIC_CONTACT_ENDPOINT` | service d'envoi du formulaire de contact | non (formulaire masqué) |
+| `NEXT_PUBLIC_SITE_URL` | URL publique (canonical, sitemap, Open Graph) | non (défaut `https://www.ccpuymoyen.com`) |
 
-**Vercel** : importer le dépôt GitHub dans Vercel, sans rien changer aux réglages (le préréglage Next.js est détecté, l'export statique aussi). Les redirections 301 des anciennes URL sont déclarées dans `vercel.json`, généré à partir de `data/redirects.json` : après toute modification de ce fichier, lancer `npm run redirects:vercel` puis commiter. Ajouter ensuite le domaine `www.ccpuymoyen.com` dans *Settings → Domains* et les variables d'environnement (`NEXT_PUBLIC_CONTACT_ENDPOINT`…) dans *Settings → Environment Variables*.
+Les redirections permanentes des anciennes URL (codes 308, équivalent 301 pour les moteurs de recherche) sont déclarées dans `data/redirects.json` et appliquées par `next.config.ts`. Ajouter le domaine `www.ccpuymoyen.com` dans *Settings → Domains*.
 
-**Autres hébergeurs : Netlify ou Cloudflare Pages** (gratuits, HTTPS, vraies redirections 301 via `out/_redirects`). Commande de build `npm run build`, dossier publié `out`.
-
-**Hébergement mutualisé Apache (OVH, o2switch…)** : envoyer le contenu de `out/` (y compris le fichier caché `.htaccess`) par FTP.
-
-**GitHub Pages** : compatible (un fichier `.nojekyll` est généré). Publier `out/` via une GitHub Action ; avec un domaine personnalisé (`www.ccpuymoyen.com`), laisser `NEXT_PUBLIC_BASE_PATH` vide. Limite : pas de redirection 301 serveur, les anciennes URL utilisent des pages de redirection HTML.
-
-Avant la bascule : récupérer la gestion du domaine `ccpuymoyen.com` auprès d'e-monsite, puis seulement ensuite résilier l'ancien site.
+Le site n'est plus compatible avec un hébergement purement statique (GitHub Pages, FTP) à cause de l'espace membres.
 
 ## Qualité — mesures réalisées le 16/11/2026
 
@@ -108,7 +132,8 @@ Mesurées sur le build de production servi localement (gzip), Lighthouse 12 :
 
 - axe-core (WCAG 2.0/2.1/2.2 A et AA) : **0 violation** sur les 11 gabarits de pages testés.
 - Aucun débordement horizontal à 390 px sur toutes les pages ; menu mobile (Échap, clic extérieur, piège de focus) et lightbox (flèches, Échap, retour du focus) testés au clavier.
-- Contrôle des liens : 0 lien interne cassé.
+- Contrôle des liens : 0 lien interne cassé (mesure faite sur la version statique initiale).
+- Espace membres testé de bout en bout : refus d'un mauvais mot de passe, connexion, téléchargement du PDF, déconnexion, puis refus du téléchargement (401). Le PDF n'est accessible à aucune URL publique.
 - **Objectif non atteint** : LCP mobile < 2,5 s en simulation Lighthouse (3G/4G lente + CPU ralenti ×4). Le temps est surtout passé à exécuter le socle JavaScript React/Next (~190 Ko gzip). À mesurer en conditions réelles après mise en ligne (Search Console / PageSpeed Insights) ; pistes : alléger encore les composants client, ou servir l'image hero en AVIF.
 - INP non mesurable en laboratoire (nécessite des données terrain).
 

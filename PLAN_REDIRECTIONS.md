@@ -1,13 +1,7 @@
 # Plan de redirections — anciennes URL → nouvelles URL
 
 Source : URL réellement relevées sur www.ccpuymoyen.com le 16/11/2026 (menu, sitemap.xml, crawl).
-Toutes les redirections sont **permanentes (301)**. Elles sont définies dans **`data/redirects.json`** et générées automatiquement à chaque `npm run build` par `scripts/generate-redirects.mjs` :
-
-| Fichier généré | Hébergeur | Type |
-| --- | --- | --- |
-| `out/_redirects` | Netlify, Cloudflare Pages | 301 serveur |
-| `out/.htaccess` | Apache (OVH, o2switch, Ionos…) | 301 serveur + forçage `https://www.` |
-| `out/<ancienne-url>` (pages HTML) | GitHub Pages ou tout hébergement statique | meta refresh + `canonical` (pas de vrai 301 possible) |
+Toutes les redirections sont **permanentes** (code 308, traité comme une 301 par les moteurs de recherche). Elles sont définies dans **`data/redirects.json`** et appliquées par `next.config.ts` (hébergement Vercel).
 
 ## Pages principales
 
@@ -40,8 +34,8 @@ Toutes les redirections sont **permanentes (301)**. Elles sont définies dans **
 
 | Ancienne URL | Nouvelle URL | Remarque |
 | --- | --- | --- |
-| `/medias/files/parcours-ccp-2028.pdf` | `/documents/parcours-ccp-2026.pdf` | ce fichier était en réalité le calendrier 2026 |
-| `/medias/files/parcours-ccp-2026.pdf` | `/documents/parcours-ccp-2026.pdf` | ce fichier contenait le calendrier 2025 (erreur de l'ancien site) |
+| `/medias/files/parcours-ccp-2028.pdf` | `/sorties/` | le PDF des parcours est désormais réservé à l'espace membres |
+| `/medias/files/parcours-ccp-2026.pdf` | `/sorties/` | idem (ce fichier contenait en réalité le calendrier 2025) |
 
 ## Contenus volontairement non redirigés (404)
 
@@ -51,6 +45,6 @@ Toutes les redirections sont **permanentes (301)**. Elles sont définies dans **
 
 ## Après la mise en ligne
 
-1. Vérifier quelques redirections : `curl -I https://www.ccpuymoyen.com/pages/le-club/presentation.html` doit renvoyer `301` vers `/le-club/`.
+1. Vérifier quelques redirections : `curl -I https://www.ccpuymoyen.com/pages/le-club/presentation.html` doit renvoyer `308` vers `/le-club/`.
 2. Déclarer `https://www.ccpuymoyen.com/sitemap.xml` dans Google Search Console et Bing Webmaster Tools.
 3. Surveiller le rapport « Pages » de la Search Console pendant 2 à 3 mois (404 inattendues).

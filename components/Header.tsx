@@ -3,7 +3,7 @@
 import Link from "next/link";
 import { usePathname } from "next/navigation";
 import { useCallback, useEffect, useRef, useState } from "react";
-import { ArrowRight, Menu, X } from "lucide-react";
+import { ArrowRight, Menu, UserRound, X } from "lucide-react";
 import { nav, site } from "@/data/site";
 import { Logo } from "./Logo";
 
@@ -116,6 +116,17 @@ export function Header() {
         </nav>
 
         <div className="flex items-center gap-3">
+          <Link
+            href="/espace-membre/"
+            aria-label="Espace membres"
+            title="Espace membres"
+            className={`inline-flex h-11 items-center gap-2 px-2 font-display text-[1.05rem] font-semibold uppercase tracking-[0.08em] transition-colors hover:text-white ${
+              isActive(pathname, "/espace-membre/") || isActive(pathname, "/connexion/") ? "text-white" : "text-white/80"
+            }`}
+          >
+            <UserRound aria-hidden size={22} />
+            <span className="hidden xl:inline">Membres</span>
+          </Link>
           <Link href="/nous-rejoindre/" className="btn btn-red hidden !min-h-11 sm:inline-flex">
             Rejoindre le club
           </Link>
@@ -174,7 +185,10 @@ export function Header() {
                 );
               })}
             </ul>
-            <Link href="/nous-rejoindre/" onClick={() => close(false)} className="btn btn-red mt-8 w-full">
+            <Link href="/espace-membre/" onClick={() => close(false)} className="mt-6 flex items-center gap-3 font-display text-xl font-bold uppercase tracking-wide text-white/85">
+              <UserRound aria-hidden size={22} /> Espace membres
+            </Link>
+            <Link href="/nous-rejoindre/" onClick={() => close(false)} className="btn btn-red mt-6 w-full">
               Rejoindre le club <ArrowRight aria-hidden size={18} />
             </Link>
             <p className="mt-6 text-sm text-white/60">

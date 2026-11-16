@@ -1,49 +1,95 @@
 {
-  "_comment": "Anciennes URL (site e-monsite) -> nouvelles URL. 'prefix' = l'ancienne URL et toutes ses sous-pages. Utilisé par scripts/generate-redirects.mjs.",
+  "_comment": "Anciennes URL (site e-monsite) -> nouvelles URL, redirections 301 appliquées par next.config.ts. 'prefix' = l'ancienne URL et toutes ses sous-pages.",
   "rules": [
-    { "from": "/pages/", "to": "/", "match": "exact" },
-    { "from": "/pages/les-activites/", "to": "/sorties/", "match": "exact" },
-    { "from": "/pages/les-activites/la-vie-du-club.html", "to": "/actualites/", "match": "exact" },
-    { "from": "/pages/les-activites/calendrier-2020.html", "to": "/sorties/", "match": "exact" },
-    { "from": "/pages/le-club/", "to": "/le-club/", "match": "exact" },
-    { "from": "/pages/le-club/presentation.html", "to": "/le-club/", "match": "exact" },
-    { "from": "/pages/le-club/ou-sommes-nous.html", "to": "/sorties/", "match": "exact" },
-    { "from": "/pages/le-club/rejoindre-l-association.html", "to": "/nous-rejoindre/", "match": "exact" },
-    { "from": "/pages/le-club/reglement-interieur.html", "to": "/le-club/reglement-interieur/", "match": "exact" },
-    { "from": "/pages/le-club/la-tenue-du-club.html", "to": "/le-club/", "match": "exact" },
-    { "from": "/pages/le-club/nos-sponsors.html", "to": "/partenaires/", "match": "exact" },
-    { "from": "/contact/", "to": "/nous-rejoindre/", "match": "prefix" },
-    { "from": "/agenda/", "to": "/actualites/", "match": "prefix" },
-    { "from": "/blog/", "to": "/actualites/", "match": "prefix" },
-    { "from": "/album-photos/", "to": "/galerie/", "match": "prefix" },
-    { "from": "/videos/", "to": "/galerie/", "match": "prefix" },
-    { "from": "/medias/files/parcours-ccp-2026.pdf", "to": "/documents/parcours-ccp-2026.pdf", "match": "exact" },
-    { "from": "/medias/files/parcours-ccp-2028.pdf", "to": "/documents/parcours-ccp-2026.pdf", "match": "exact" }
-  ],
-  "stubs": [
-    "/contact/contacter-l-association.html",
-    "/agenda/assemblees-generales/",
-    "/agenda/evenements-organises-par-l-association/",
-    "/agenda/evenements-organises-par-l-association/course-cycliste-de-puymoyen.html",
-    "/blog/l-association/",
-    "/blog/nouveau-site-internet.html",
-    "/album-photos/les-adherents/",
-    "/album-photos/1985-2015-30ans-au-cyclo-club-de-puymoyen/",
-    "/album-photos/cat-2023/",
-    "/album-photos/cat-2019/",
-    "/album-photos/cat-2018/",
-    "/album-photos/cat-2017/",
-    "/album-photos/cat-2016/",
-    "/album-photos/cat-2015/",
-    "/album-photos/cat-2014/",
-    "/album-photos/cat-2013/",
-    "/album-photos/cat-2012/",
-    "/videos/cat-2023/",
-    "/videos/cat-2019/",
-    "/videos/cat-2016/",
-    "/videos/cat-2015/",
-    "/videos/cat-2014/",
-    "/videos/cat-2013/",
-    "/videos/cat-2012/"
+    {
+      "from": "/pages/",
+      "to": "/",
+      "match": "exact"
+    },
+    {
+      "from": "/pages/les-activites/",
+      "to": "/sorties/",
+      "match": "exact"
+    },
+    {
+      "from": "/pages/les-activites/la-vie-du-club.html",
+      "to": "/actualites/",
+      "match": "exact"
+    },
+    {
+      "from": "/pages/les-activites/calendrier-2020.html",
+      "to": "/sorties/",
+      "match": "exact"
+    },
+    {
+      "from": "/pages/le-club/",
+      "to": "/le-club/",
+      "match": "exact"
+    },
+    {
+      "from": "/pages/le-club/presentation.html",
+      "to": "/le-club/",
+      "match": "exact"
+    },
+    {
+      "from": "/pages/le-club/ou-sommes-nous.html",
+      "to": "/sorties/",
+      "match": "exact"
+    },
+    {
+      "from": "/pages/le-club/rejoindre-l-association.html",
+      "to": "/nous-rejoindre/",
+      "match": "exact"
+    },
+    {
+      "from": "/pages/le-club/reglement-interieur.html",
+      "to": "/le-club/reglement-interieur/",
+      "match": "exact"
+    },
+    {
+      "from": "/pages/le-club/la-tenue-du-club.html",
+      "to": "/le-club/",
+      "match": "exact"
+    },
+    {
+      "from": "/pages/le-club/nos-sponsors.html",
+      "to": "/partenaires/",
+      "match": "exact"
+    },
+    {
+      "from": "/contact/",
+      "to": "/nous-rejoindre/",
+      "match": "prefix"
+    },
+    {
+      "from": "/agenda/",
+      "to": "/actualites/",
+      "match": "prefix"
+    },
+    {
+      "from": "/blog/",
+      "to": "/actualites/",
+      "match": "prefix"
+    },
+    {
+      "from": "/album-photos/",
+      "to": "/galerie/",
+      "match": "prefix"
+    },
+    {
+      "from": "/videos/",
+      "to": "/galerie/",
+      "match": "prefix"
+    },
+    {
+      "from": "/medias/files/parcours-ccp-2026.pdf",
+      "to": "/sorties/",
+      "match": "exact"
+    },
+    {
+      "from": "/medias/files/parcours-ccp-2028.pdf",
+      "to": "/sorties/",
+      "match": "exact"
+    }
   ]
 }

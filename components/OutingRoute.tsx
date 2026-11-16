@@ -1,7 +1,7 @@
-import { ArrowUpRight, Mountain, Route } from "lucide-react";
+import { Mountain, Route } from "lucide-react";
 import type { Outing } from "@/lib/sorties";
 
-/** Un parcours du calendrier (groupe, destination, distance, dénivelé, lien Garmin). */
+/** Un parcours du calendrier (groupe, destination, distance, dénivelé) — consultation uniquement. */
 export function OutingRoute({ o, compact = false, dark = false }: { o: Outing; compact?: boolean; dark?: boolean }) {
   const muted = dark ? "text-white/65" : "text-mute";
   return (
@@ -32,18 +32,6 @@ export function OutingRoute({ o, compact = false, dark = false }: { o: Outing; c
           <span className="inline-flex items-center gap-1.5">
             <Mountain aria-hidden size={15} /> {o.elevationM} m D+
           </span>
-        )}
-        {o.garminUrl && (
-          <a
-            href={o.garminUrl}
-            target="_blank"
-            rel="noopener noreferrer"
-            className={`inline-flex items-center gap-1 font-medium underline decoration-1 underline-offset-4 ${dark ? "text-white hover:text-white/80" : "text-ink hover:text-red-deep"}`}
-          >
-            Tracé Garmin Connect
-            <ArrowUpRight aria-hidden size={14} />
-            <span className="sr-only">: {o.name}, nouvel onglet</span>
-          </a>
         )}
       </p>
     </div>

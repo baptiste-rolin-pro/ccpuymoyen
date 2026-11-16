@@ -9,15 +9,15 @@
     "dev": "next dev",
     "prebuild": "node scripts/optimize-images.mjs",
     "build": "next build",
-    "postbuild": "node scripts/generate-redirects.mjs",
-    "start": "npx serve@14 out",
+    "start": "next start",
     "lint": "tsc --noEmit",
-    "check:links": "node scripts/check-links.mjs",
-    "redirects:vercel": "node scripts/generate-vercel-json.mjs"
+    "membre:ajouter": "node scripts/add-member.mjs"
   },
   "dependencies": {
     "@fontsource-variable/inter": "5.3.0",
     "@fontsource/barlow-condensed": "5.3.0",
+    "bcryptjs": "3.0.3",
+    "jose": "6.2.17",
     "lucide-react": "1.73.0",
     "next": "16.4.6",
     "react": "19.3.1",

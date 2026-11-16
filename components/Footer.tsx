@@ -33,6 +33,9 @@ export function Footer() {
               <Link href="/galerie/" className="text-white/85 hover:text-white">Galerie photos</Link>
             </li>
             <li>
+              <Link href="/espace-membre/" className="text-white/85 hover:text-white">Espace membres</Link>
+            </li>
+            <li>
               <Link href="/le-club/reglement-interieur/" className="text-white/85 hover:text-white">Règlement intérieur</Link>
             </li>
           </ul>

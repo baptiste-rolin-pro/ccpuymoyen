@@ -58,7 +58,7 @@ export default function LegalPage() {
           <div>
             <h2>Liens externes</h2>
             <p className="mt-3">
-              Le site renvoie vers des services tiers (Garmin Connect, Facebook, OpenStreetMap, Google Maps, sites des
+              Le site renvoie vers des services tiers (Facebook, OpenStreetMap, Google Maps, sites des
               partenaires) soumis à leurs propres conditions d&apos;utilisation.
             </p>
           </div>

@@ -6,7 +6,6 @@ export type Outing = {
   name: string;
   distanceKm: number | null;
   elevationM?: number;
-  garminUrl: string | null;
   itinerary: string;
 };
 

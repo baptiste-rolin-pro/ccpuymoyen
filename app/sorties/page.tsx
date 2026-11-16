@@ -1,6 +1,6 @@
 import type { Metadata } from "next";
 import Link from "next/link";
-import { AlertTriangle, CalendarDays, Clock, Download, ExternalLink, HardHat, MapPin, Users } from "lucide-react";
+import { AlertTriangle, ArrowRight, CalendarDays, Clock, HardHat, Lock, MapPin, Users } from "lucide-react";
 import { PageHero } from "@/components/PageHero";
 import { SectionHeading } from "@/components/SectionHeading";
 import { MeetingMap } from "@/components/MeetingMap";
@@ -9,12 +9,15 @@ import { JsonLd } from "@/components/JsonLd";
 import { site } from "@/data/site";
 import { calendarSource, outings, stats, todayISO } from "@/lib/sorties";
 import { pageMetadata } from "@/lib/seo";
-import { withBase } from "@/lib/format";
+
+// régénérée toutes les heures : le « prochain parcours » suit la date du jour
+export const revalidate = 3600;
+import { NextSaturday } from "@/components/NextSaturday";
 
 export const metadata: Metadata = pageMetadata({
   title: "Nos sorties : calendrier 2026, parcours et rendez-vous",
   description:
-    "Sorties vélo du Cyclo Club de Puymoyen le mercredi et le samedi à 13h30, place de la Mairie. Calendrier 2026 des parcours CCP1 et CCP2 autour d'Angoulême, tracés Garmin et PDF.",
+    "Sorties vélo du Cyclo Club de Puymoyen le mercredi et le samedi à 13h30, place de la Mairie. Prochain parcours du samedi et calendrier 2026 des parcours CCP1 et CCP2 autour d'Angoulême.",
   path: "/sorties/",
   image: "/img/sortie-saison-2026-1200.webp",
 });
@@ -40,11 +43,18 @@ export default function SortiesPage() {
           <a href="#calendrier" className="btn btn-red">
             <CalendarDays aria-hidden size={18} /> Voir le calendrier
           </a>
-          <a href={withBase(calendarSource.document)} className="btn btn-ghost text-white" download>
-            <Download aria-hidden size={18} /> PDF 2026
+          <a href="#prochain-parcours" className="btn btn-ghost text-white">
+            Prochain parcours
           </a>
         </div>
       </PageHero>
+
+      {/* Prochain parcours */}
+      <section id="prochain-parcours" aria-label="Prochain parcours du samedi" className="scroll-mt-24 speed-lines-dark bg-stone py-16 sm:py-24">
+        <div className="wrap" data-reveal>
+          <NextSaturday />
+        </div>
+      </section>
 
       {/* Rendez-vous */}
       <section id="rendez-vous" aria-labelledby="rdv-title" className="scroll-mt-24 py-20 sm:py-28">
@@ -131,7 +141,8 @@ export default function SortiesPage() {
             intro={
               <>
                 {stats.days} samedis, {stats.routes} parcours et jusqu&apos;à {stats.longest} km. Données issues du document officiel
-                « {calendarSource.title} » ({calendarSource.version}). Les tracés sont consultables et exportables sur Garmin Connect.
+                « {calendarSource.title} » ({calendarSource.version}). Parcours en consultation uniquement : le document
+                complet est téléchargeable dans l&apos;espace membres.
               </>
             }
           />
@@ -141,36 +152,30 @@ export default function SortiesPage() {
         </div>
       </section>
 
-      {/* Documents */}
-      <section aria-labelledby="docs-title" className="py-20 sm:py-24">
+      {/* Espace membres */}
+      <section aria-labelledby="membres-title" className="py-20 sm:py-24">
         <div className="wrap">
-          <SectionHeading eyebrow="Documents" id="docs-title" title={<>À télécharger</>} />
-          <ul className="mt-10 grid gap-4 md:grid-cols-2">
-            <li data-reveal>
-              <a href={withBase(calendarSource.document)} download className="group flex h-full items-center gap-5 border border-stone-2 p-6 transition-colors hover:border-ink">
-                <span className="inline-flex h-16 w-14 shrink-0 items-center justify-center bg-red font-display text-lg font-bold text-white">PDF</span>
-                <span>
-                  <span className="block font-display text-2xl font-bold uppercase group-hover:text-red-deep">Parcours CCP 2026</span>
-                  <span className="text-sm text-mute">{calendarSource.version} · 13 pages · 119 Ko</span>
-                </span>
-                <Download aria-hidden className="ml-auto shrink-0" />
-              </a>
-            </li>
-            <li data-reveal style={{ ["--delay" as string]: "100ms" }}>
-              <Link href="/le-club/reglement-interieur/" className="group flex h-full items-center gap-5 border border-stone-2 p-6 transition-colors hover:border-ink">
-                <span className="inline-flex h-16 w-14 shrink-0 items-center justify-center bg-ink font-display text-lg font-bold text-white">§</span>
-                <span>
-                  <span className="block font-display text-2xl font-bold uppercase group-hover:text-red-deep">Règlement intérieur</span>
-                  <span className="text-sm text-mute">Sécurité, groupes, horaires</span>
-                </span>
-                <ExternalLink aria-hidden className="ml-auto shrink-0" />
-              </Link>
-            </li>
-          </ul>
-          <p className="mt-6 text-sm text-mute">
-            Fichiers GPX : les tracés de chaque parcours peuvent être exportés depuis Garmin Connect (lien « Tracé Garmin
-            Connect » sous chaque sortie). Le club ne publie pas encore de fichiers GPX directement sur le site.
-          </p>
+          <div className="on-dark relative overflow-hidden bg-ink p-8 text-white sm:p-12 lg:p-16" data-reveal>
+            <div aria-hidden className="absolute -right-8 top-0 h-full w-28 -skew-x-[24deg] bg-red" />
+            <div className="relative max-w-2xl">
+              <p className="eyebrow text-white/70">Licenciés du club</p>
+              <h2 id="membres-title" className="display mt-4 text-[clamp(2.2rem,4.5vw,3.75rem)]">
+                Les parcours à emporter
+              </h2>
+              <p className="mt-5 text-lg leading-relaxed text-white/80">
+                Le document officiel des parcours est réservé aux membres du club. Connectez-vous à l&apos;espace membres
+                pour le télécharger.
+              </p>
+              <div className="mt-8 flex flex-wrap gap-3">
+                <Link href="/espace-membre/" className="btn btn-red">
+                  <Lock aria-hidden size={18} /> Espace membres
+                </Link>
+                <Link href="/nous-rejoindre/" className="btn btn-ghost text-white">
+                  Devenir membre <ArrowRight aria-hidden size={18} />
+                </Link>
+              </div>
+            </div>
+          </div>
         </div>
       </section>
 

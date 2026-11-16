@@ -1,9 +1,7 @@
 {
   "source": {
     "title": "Parcours CCP 2026",
-    "version": "version 1.0 du 5 janvier 2026",
-    "document": "/documents/parcours-ccp-2026.pdf",
-    "originalUrl": "https://www.ccpuymoyen.com/medias/files/parcours-ccp-2028.pdf"
+    "version": "version 1.0 du 5 janvier 2026"
   },
   "outings": [
     {
@@ -14,7 +12,6 @@
       ],
       "name": "Blanzaguet",
       "distanceKm": 69,
-      "garminUrl": "https://connect.garmin.com/modern/course/28036179",
       "itinerary": "Puymoyen, Dirac, Torsac, Mercerie, Ronsenac, Gurat, à gauche dir. Vendoire, Vendoire, à gauche dir. Champagne, Champagne, à gauche dir. Villebois, les Jauffrenies, à gauche sur D23 et à droite, dir. Blanzaguet, Blanzaguet à gauche, le Peyrat, tt dt et à gauche dir. Magnac Lavalette, avant Magnac à droite Légonie, en face au carrefour, à droite sur D81 dir. Torsac, Dirac, Puymoyen."
     },
     {
@@ -24,7 +21,6 @@
       ],
       "name": "Chateauneuf",
       "distanceKm": 77,
-      "garminUrl": "https://connect.garmin.com/modern/course/81849202",
       "itinerary": "Puymoyen, Combe de Loup, Andole, Voeuil, la Couronne, Pombreton, Sireuil, St Simeux, Chateauneuf, Mosnac, Pombreton, la Couronne, Motocross, Voeuil, Torsac, Dirac, Puymoyen."
     },
     {
@@ -34,7 +30,6 @@
       ],
       "name": "Chazelles",
       "distanceKm": 69,
-      "garminUrl": "https://connect.garmin.com/modern/course/83322846",
       "itinerary": "Puymoyen, Dirac, Roprie, Bouex, la Petitie, Chazelles, rd pt à droite dir. St Germain de Montbron, à gauche sur D109 dir. Moulins sur Tardoire, tout dt, Moulins sur Tardoire, à gauche après la Tardoire, Rochebertier, à gauche Château de Rancogne, Rancogne, suivre D110, à gauche sur D73 et à droite sur D413 Marsac, en face le Queroy, à gauche, en face pont chemin de fer dir. Garat, Bois Blanc, carrefour en bas à gauche dir. Bouex, les Grands Moulins, à droite Roprie, Dirac, Puymoyen."
     },
     {
@@ -44,7 +39,6 @@
       ],
       "name": "Jauldes",
       "distanceKm": 77,
-      "garminUrl": "https://connect.garmin.com/modern/course/81342623",
       "itinerary": "Puymoyen, Ste Catherine, Garat, la Gare, en face Bois Blanc le Queroy, à droite Pranzac, Bunzac, la Rochefoucauld, rte de Mansle, Pont d’Agris, au rond point à gauche, les Granges, à droite en haut dir. Jauldes sur D11, Jauldes, à gauche sur D91, Cherves, à gauche, le Temple, la Jauvigère, les Frauds, les Rassats, les Favrauds, à gauche Puy de Nanteuil à droite Mornac, Cimetière, Touvre, Garat Bourg, Ste Catherine, Ribondaines, Puymoyen."
     },
     {
@@ -54,7 +48,6 @@
       ],
       "name": "Gurat",
       "distanceKm": 69,
-      "garminUrl": "https://connect.garmin.com/modern/course/83323037",
       "itinerary": "Puymoyen, Dirac, Torsac, Château de la Mercerie, Ronsenac, D81 dir. Gurat, à droite sur D441, Charbonnier, à gauche sur D19, à gauche sur D143 Vaux Lavalette, à gauche Gurat, Villebois Lavalette, L'Ombre, Torsac, Dirac, Puymoyen."
     },
     {
@@ -65,7 +58,6 @@
       "name": "Blanzaguet 2025",
       "distanceKm": 77,
       "elevationM": 576,
-      "garminUrl": "https://connect.garmin.com/modern/course/323479992",
       "itinerary": "Puymoyen, Dirac, Torsac, Magnac Lavalette bourg, l’Aumonerie, le Peyrat, Blanzaguet, à droite, en haut à gauche sur D23, Fontaine, à droite Champagne, Vendoire, Gurat, Ronsenac, tout droit château d'eau à gauche, Le Roc, étang Genevreau, Houme,Torsac, Dirac, Puymoyen."
     },
     {
@@ -75,7 +67,6 @@
       ],
       "name": "Plassac",
       "distanceKm": 73,
-      "garminUrl": "https://connect.garmin.com/modern/course/82470009",
       "itinerary": "Puymoyen, Dirac, Torsac, Voeuil, Sterling, Motocross, la Couronne, ancienne RN 10 Roullet, le Berguille, rond point à gauche sur D7, Claix, D7 dir. Blanzac, à gauche sur D107 les Aireaux, Plassac Rouffiac, Voulgézac, Sainte Aquitière, sur D5, Charmant Gare, sur D5, dir. Villebois, à gauche sur D19 dir. Mouthiers, Etang Genevreau à droite vers Houme sur D101, Torsac, Dirac, Puymoyen."
     },
     {
@@ -86,7 +77,6 @@
       "name": "La Chapelle Saint Robert",
       "distanceKm": 84,
       "elevationM": 677,
-      "garminUrl": "https://connect.garmin.com/modern/course/323481665",
       "itinerary": "Puymoyen, Dirac, Roprie, la Laiterie, Sers, Vouzan, Mirande, Pontsec, Marthon, Feuillade direction Javerlhac, La Chapelle Saint Robert, Hautefaye, Mainzac, Charras, Rougnac, Vallée Échelle direction Magnac, Sainte Catherine, Puymoyen"
     },
     {
@@ -96,7 +86,6 @@
       ],
       "name": "Anais",
       "distanceKm": 67,
-      "garminUrl": "https://connect.garmin.com/modern/course/83403058",
       "itinerary": "Puymoyen, Dirac, Ste Catherine, Magnac, Ruelle, Champniers, Churet, Anais, Jauldes, Brie, à gauche Les Frauds, Les Rassats, Les Favrauds, à droite, Les Arnauds, Mornac cimetière, Touvre, Ste Catherine, Dirac, Puymoyen."
     },
     {
@@ -107,7 +96,6 @@
       "name": "Montignac",
       "distanceKm": 80,
       "elevationM": 716,
-      "garminUrl": "https://connect.garmin.com/modern/course/324637941",
       "itinerary": "Puymoyen, Sainte Catherine, Magnac, Ruelle, Champniers, Argence, Montignac, St Amant de Boixe, Villejoubert, Tourriers, Chez Renard, Jauldes, Brie, Les Favrauds, Mornac, Touvre, Sainte Catherine, Puymoyen"
     },
     {
@@ -117,7 +105,6 @@
       ],
       "name": "Champagne Fontaine",
       "distanceKm": 72,
-      "garminUrl": "https://connect.garmin.com/modern/course/82472024",
       "itinerary": "Puymoyen, Dirac, Torsac, la Mercerie, l'Ombre, Ronsenac, Gurat, sortie Gurat à gauche Vendoire, à gauche Champagne, Eglise, à gauche, après silo à droite, Pas de Fontaine à gauche, 100 m à droite, Blanzaguet, à gauche après Eglise, en haut à droite sur D23, dir. Villebois, en face Tennis, Gendarmerie, rond point tout droit, rond point à gauche dir. Chateauneuf, l’Ombre à droite, la Mercerie, Torsac, Dirac, Puymoyen."
     },
     {
@@ -128,7 +115,6 @@
       "name": "Marillac",
       "distanceKm": 84,
       "elevationM": 636,
-      "garminUrl": "https://connect.garmin.com/modern/course/324642760",
       "itinerary": "Puymoyen, Sainte Catherine, Mornac, jardinerie à gauche, en haut à droite, Camp Américain, Bunzac, La Rochefoucauld direction l'Arbre, Marillac, Saint Sornin, Montbron, Marthon, Chazelles, Bouex, Dirac, Puymoyen"
     },
     {
@@ -138,7 +124,6 @@
       ],
       "name": "Mouthiers",
       "distanceKm": 64,
-      "garminUrl": "https://connect.garmin.com/modern/course/8332537532",
       "itinerary": "Puymoyen, Dirac, Torsac, Voeuil, Bourisson, Mouthiers (direction Blanzac), carrefour D12 D5 à gauche, le silo, la Mercerie, Torsac, Dirac, Puymoyen."
     },
     {
@@ -149,7 +134,6 @@
       "name": "Javerlhac",
       "distanceKm": 81,
       "elevationM": 730,
-      "garminUrl": "https://connect.garmin.com/modern/course/324645546",
       "itinerary": "Puymoyen, Dirac, Rougnac, Charras, Mainzac, D95, Hautefaye, Javerlhac, Feuillade, Marthon, Grassac tout droit puis à gauche au carrefour, Sers, Picard, Roprie, Dirac, Puymoyen"
     },
     {
@@ -159,7 +143,6 @@
       ],
       "name": "Gurat",
       "distanceKm": 69,
-      "garminUrl": "https://connect.garmin.com/modern/course/83323037",
       "itinerary": "Puymoyen, Dirac, Torsac, la Mercerie, l’Ombre, à gauche sur D5 Villebois Lavalette, rond point à droite sur D16, rond point en face, Gendarmerie, à droite sur D17 dir. Gurat, Gurat, tout droit, à droite sur D143 dir. Vaux Lavalette, route des crêtes, à droite sur D19, à droite sur D441, Charbonnier, à gauche sur D81 Ronsenac, l'Ombre, Torsac, Dirac, Puymoyen."
     },
     {
@@ -169,7 +152,6 @@
       ],
       "name": "Val de Bonnieure",
       "distanceKm": 91,
-      "garminUrl": "https://connect.garmin.com/modern/course/81346021",
       "itinerary": "Puymoyen, Dirac, Ste Catherine, Garat Bourg, la Gare, à gauche Touvre, Ruelle, Vaugeline, le Poteau de Champniers, à droite la Simarde, Brie bourg, en face dir. Cherves, à gauche sur D113 Anais, Tourriers, Vadalle, St Angeau, l’Age Ballot, Pont d’Agris à droite la Grande Fosse, rond point Brie, à gauche la Prévoterie, les Favrauds, en face Mornac la pépinière, à gauche le Quéroy, à droite le Bois Blanc, Touvre, Ste Catherine, Puymoyen."
     },
     {
@@ -179,7 +161,6 @@
       ],
       "name": "Mosnac",
       "distanceKm": 78,
-      "garminUrl": "https://connect.garmin.com/modern/course/83326008",
       "itinerary": "Puymoyen, Dirac, Torsac, Voeuil, Bourisson, la Couronne, Pombreton,Sireuil, St Simeux, Mosnac, à droite avant barrière SNCF, Pombreton, la Couronne, Motocross, Voeuil, Torsac, Dirac, Puymoyen."
     },
     {
@@ -190,7 +171,6 @@
       "name": "Salles Lavalette",
       "distanceKm": 77,
       "elevationM": 602,
-      "garminUrl": "https://connect.garmin.com/modern/course/324649523",
       "itinerary": "Puymoyen, Combe de Loup, Torsac, traversée de Fouquebrune par D122 puis D19, Etang Genevreau à gauche, Le Roc, Charmant à Gauche, en bas à droite, avant pont SNCF à gauche, Route des Crêtes, Salles Lavalette, Gurat, Ronsenac tout droit, la Mercerie, Torsac, Dirac, Puymoyen"
     },
     {
@@ -200,7 +180,6 @@
       ],
       "name": "Blanzaguet",
       "distanceKm": 74,
-      "garminUrl": "https://connect.garmin.com/modern/course/83326270",
       "itinerary": "Puymoyen, Dirac, Torsac, Mercerie, Magnac Lavalette, Aumonerie, le Peyrat, Blanzaguet, à droite, en haut à gauche sur D23, Fontaine, à droite dir. Champagne, Vendoire, Gurat, Ronsenac, Torsac, Dirac, Puymoyen."
     },
     {
@@ -211,7 +190,6 @@
       "name": "Saint Angeau",
       "distanceKm": 90,
       "elevationM": 775,
-      "garminUrl": "https://connect.garmin.com/modern/course/324652404",
       "itinerary": "Puymoyen, Sainte Catherine, Touvre, Chemin de fer à droite, Bois Blanc, jardinerie à droite, Les Favrauds, La Prévôterie, D12, Le Pont d'Agris à gauche D6, Les Basses Ecures, l'Age Ballot, Saint Angeau, D15, Biagne, Terrebourg, Vadalle, Tourriers, Anais, D113, Breuil d'Anais, Cherves à droite, Brie, La Simarde, Poteau Champniers, Ruelle, Touvre, Sainte Catherine, Puymoyen"
     },
     {
@@ -221,7 +199,6 @@
       ],
       "name": "Jauldes",
       "distanceKm": 77,
-      "garminUrl": "https://connect.garmin.com/modern/course/83496333",
       "itinerary": "Puymoyen, Ste Catherine, Garat, à gauche sur D410 dir,Touvre, Touvre, Mornac, rond point cimetière à gauche, route des Fontaines, les Favrauds, les Rassats, les Frauds, sur D113, la Jauvigère, le Temple, Cherves à droite sur D91, Jauldes, à droite sur D11, les Granges d’Agris, Pont d'Agris, à droite au rond point sur D6, la Rochefoucauld, la Chabanne, à gauche sur D33 dir. Bunzac, tout droit dir. Pranzac, avt cimetière de Pranzac à droite dir.le Queroy, chez Mondot, la Brouterie, le Queroy à gauche, Bois Blanc, Garat, Ste Catherine, Puymoyen."
     },
     {
@@ -232,7 +209,6 @@
       "name": "La Rochebeaucourt",
       "distanceKm": 84,
       "elevationM": 708,
-      "garminUrl": "https://connect.garmin.com/modern/course/324654792",
       "itinerary": "Puymoyen, Dirac, Roprie, Rougnac, la Rochebeaucourt, Goût Rossignol, Villebois, Magnac, La Mercerie à gauche, Fouquebrune, Etang Genevreau, Torsac, Dirac, Puymoyen"
     },
     {
@@ -242,7 +218,6 @@
       ],
       "name": "Salles Lavalette",
       "distanceKm": 74,
-      "garminUrl": "https://connect.garmin.com/modern/course/83327026",
       "itinerary": "Puymoyen, Dirac, Torsac, Mercerie, Ronsenac, Gurat, sur D24, à gauche Salles Lavalette, sur D19, Route des Crêtes, Juillaguet, sur D19, à droite Houmé, Torsac, Dirac, Puymoyen."
     },
     {
@@ -252,7 +227,6 @@
       ],
       "name": "Aubeterre",
       "distanceKm": 105,
-      "garminUrl": "https://connect.garmin.com/modern/course/80943595",
       "itinerary": "Puymoyen, Dirac, Torsac, à gauche et à droite Puymard, à gauche Fouquebrune, le Roc, Juillaguet, route des crêtes, à droite Juignac, Bors de Montmoreau, Aubeterre, Nabinaud, St Sèverin, à gauche, à droite Palluaud (Stèle Stéphane B.), Gurat, Ronsenac, l’Ombre, Torsac, Dirac, Puymoyen."
     },
     {
@@ -262,7 +236,6 @@
       ],
       "name": "La Fenetre",
       "distanceKm": 76,
-      "garminUrl": "https://connect.garmin.com/modern/course/83327293",
       "itinerary": "Puymoyen, Dirac, Roprie, à droite la laiterie, 2 fois à gauche dir. Sers, à droite au rond point dir. Charras, Maison Neuve, aux 5 routes 2e à gauche dir. Grassac, Grassac, Marthon, dir. Montbron, chez Trappe, à gauche dir. Vouthon face au cimetière, les Rouilloux, Vouthon, droite gauche, passer devant la salle polyvalente de Vouthon, sur D108, après pont Tardoire en face, en haut droite gauche, la Fenêtre, Cave de St Sornin, en face, les Combes, Rochebertier, les Nilloux, sur D110, Rancogne, les Pascauds, Bunzac, Montgoumard, les Favrauds, Mornac par la descente, Touvre, Sainte Catherine, Puymoyen."
     },
     {
@@ -273,7 +246,6 @@
       "name": "Marsac",
       "distanceKm": 109,
       "elevationM": 756,
-      "garminUrl": "https://connect.garmin.com/modern/course/324865595",
       "itinerary": "Puymoyen, Sainte Catherine, Mornac, Jardinerie à gauche, Puy de Nanteuil, Les Rassats, Les Frauds, Cherves, Jauldes, D88, Tourriers, Saint Amant de Boixe, Montignac droite gauche, Marsac, Asnières, Hiersac, Champmillon, Sireuil, Nersac, Pombreton, La Couronne, Motocross, Voeuil, Torsac, Dirac, Puymoyen"
     },
     {
@@ -283,7 +255,6 @@
       ],
       "name": "Sireuil",
       "distanceKm": 83,
-      "garminUrl": "https://connect.garmin.com/modern/course/83405754",
       "itinerary": "Puymoyen, Dirac, la petite Courrière à droite, Puymerle, à droite sur D81 et à gauche sur D428, l’Andole, Voeuil, Bourisson, la Couronne, Pombreton, Sireuil, St Simeux, Chateauneuf, Mosnac, Pombreton, la Couronne, Sterling, Voeuil, l’Andole, à gauche sur D428, en haut à droite et à gauche, la Petite Courrière, à gauche dir. Dirac, Puymoyen."
     },
     {
@@ -294,7 +265,6 @@
       "name": "Goûts Rossignal",
       "distanceKm": 96,
       "elevationM": 679,
-      "garminUrl": "https://connect.garmin.com/modern/course/324868260",
       "itinerary": "Puymoyen, Dirac, Torsac, Fouquebrune, Juillaguet par la droite Salles Lavalette, Nanteuil, Auriac, Goûts Rossignol, Fontaine, Pas de Fontaine, La Rochebeaucourt, Rougnac, Vallée de l'Echelle, Roprie, Dirac, Puymoyen"
     },
     {
@@ -304,7 +274,6 @@
       ],
       "name": "Coteaux du Blanzacais",
       "distanceKm": 76,
-      "garminUrl": "https://connect.garmin.com/modern/course/21451651",
       "itinerary": "Puymoyen, Dirac, Torsac, Andole, les Naulets, Mouthiers, dir Blanzac, à dte Bécheresse, Blanzac, rte de Jurignac, en haut à droite chez Gayet, à gauche Champagne Vigny, à dte église dir Charbonnière, Plassac, Gersac, Mouthiers, Bourisson, Voeuil, Andole, Dirac, Puymoyen."
     },
     {
@@ -315,7 +284,6 @@
       "name": "Bassac",
       "distanceKm": 117,
       "elevationM": 804,
-      "garminUrl": "https://connect.garmin.com/modern/course/324872438",
       "itinerary": "Puymoyen, Dirac, Torsac, Voeuil, La Couronne, Pombreton, Nersac, Sireuil, Chez Gagnon, Saint Simeux monter dans village, Vibrac, Saint Simon, Bassac, St Même, Chateauneuf direction Jurignac, Etriac, Plassac, Voulgezac, Acquitière direction Charmant, Le Roc à gauche, Etang Gebevreau, Torsac, Dirac, Puymoyen"
     },
     {
@@ -325,7 +293,6 @@
       ],
       "name": "Villebois Lavalette",
       "distanceKm": 81,
-      "garminUrl": "https://connect.garmin.com/modern/course/83341442",
       "itinerary": "Puymoyen, Dirac, la Petite Courrière, à droite Puymerle, à droite sur D81 et à gauche sur D428, l’Andole, en face, les Naulets, à gauche sur D427, D42, D19, Juillaguet, à gauche, Ronsenac, Villebois, Château, sur D5, vers Edon, la Rochebeaucourt, sur D87, Rougnac, Charbontière, la Brousse, Dignac, Clé d'Or, les Garands, Courrière, Dirac, Puymoyen."
     },
     {
@@ -335,7 +302,6 @@
       ],
       "name": "Massignac",
       "distanceKm": 115,
-      "garminUrl": "https://connect.garmin.com/modern/course/81374543",
       "itinerary": "Puymoyen, Dirac, Roprie, Bouex, a Petitie, Chazelles, sur D33 St Germain de Montbron, Marthon, Montbron, sur D699, Chatain Besson, Ecuras, suivre sur D699, Maisonnais sur Tardoire, à gauche sur D33A dir. les Salles Lavauguyon, D160 Verneuil, à gauche sur D13 Massignac, la Belle Etoile, l’Arbre, à gauche dir. la Ribe sur D110 St Sornin, Vilhonneur, rte de Montbron à droite, Pranzac, le Quéroy, à gauche pt Chemin de fer, Bois Blanc, Garat, Ste Catherine, Puymoyen."
     },
     {
@@ -345,7 +311,6 @@
       ],
       "name": "Jauldes",
       "distanceKm": 81,
-      "garminUrl": "https://connect.garmin.com/modern/course/82589006",
       "itinerary": "Puymoyen, Ste Catherine, Touvre (chemin de fer à droite Bois Blanc), le Quéroy, à gauche dir. Mornac, à droite derrière Jardinerie, les Mesniers, les Favrauds, sur D388, dir. Brie, la Prévoterie, à droite sur D12 rte de la Grande Fosse, après les 5 rtes à gauche sur D11 dir. Jauldes, Jauldes, à droite et à gauche, Treillis, chez Renard, Tourriers, Anais, sur D113, Breuil d'Anais, Cherves à droite, Brie, la Simarde, Poteau Champniers, Ruelle, Touvre, Ste Catherine, Puymoyen."
     },
     {
@@ -356,7 +321,6 @@
       "name": "Touzac",
       "distanceKm": 119,
       "elevationM": 934,
-      "garminUrl": "https://connect.garmin.com/modern/course/324875084",
       "itinerary": "Puymoyen, Combe de Loup, Andole, Voeuil, Mouthiers, Blanzac, Barbezieux, Touzac, Chateauneuf, Angeac, Vibrac, Tourtron, Saint Simeux, Chez Gagnon, Sireuil, Nersac, Pombreton, La Couronne, Motocross, Voeuil, Torsac, Dirac, Puymoyen"
     },
     {
@@ -366,7 +330,6 @@
       ],
       "name": "Beaussac",
       "distanceKm": 81,
-      "garminUrl": "https://connect.garmin.com/modern/course/83340768",
       "itinerary": "Puymoyen, Dirac, Roprie, la laiterie, gauche droite, Vallée de l'Echelle, Rougnac, le Clédou, Combiers, les Graulges, Beaussac, Bretanges, Poutignac, Charras, Sers, rd pt à gauche sur D73 dir. Dignac, Dignac, Cimetière, la Petite Courrière, à droite, Dirac, Puymoyen."
     },
     {
@@ -377,7 +340,6 @@
       "name": "Nontron",
       "distanceKm": 118,
       "elevationM": 744,
-      "garminUrl": "https://connect.garmin.com/modern/course/324877571",
       "itinerary": "Puymoyen, Sainte Catherine, Vallée Echelle, Bouex, Marthon, Javerlhac, Nontron, Mareuil, Fontaine, Villebois, Magnac, Torsac, Dirac, Puymoyen"
     },
     {
@@ -387,7 +349,6 @@
       ],
       "name": "St Genis de Hiersac",
       "distanceKm": 91,
-      "garminUrl": "https://connect.garmin.com/modern/course/83340547",
       "itinerary": "Puymoyen, Dirac, Torsac, Voeuil, Sterling, Motocross, La Couronne, Pombreton, Nersac, Pont de la Meure, St Saturnin, Hiersac, Mini Tunnel, sur D14, Marange, à droite sur Douzat, Douzat à gauche sur D385, sortie bourg à droite La Bordière, à gauche et tout droit, à gauche sur D53 dir. St Amant de Nouère, à droite rester sur D53, St Genis de Hiersac, en face sur D19 dir. Genac, au carrefour à droite sur D11 dir. Vars, Basse à droite sur D387, Marsac, Cimetière à gauche, à droite avant Charente sur rte de Guissalle, Guissalle, à droite sur D117 dir. Vindelle, en face Charente sur D406, Balzac, à gauche et à droite sur rue du Pré du Logis, Vouillac, Champniers, Poteau, Vaugeline, Ruelle, Cimetière, Fourville, Touvre, Ste Catherine, Dirac, Puymoyen."
     },
     {
@@ -398,7 +359,6 @@
       "name": "Vindelle",
       "distanceKm": 114,
       "elevationM": 867,
-      "garminUrl": "https://connect.garmin.com/modern/course/324881943",
       "itinerary": "Puymoyen, Dirac, Torsac, Houme, Mouthiers, D42, Roullet, D7, Sireuil, Champmillon, Hiersac, Asnières, Tonne, Vindelle, Vouillac, Champniers, La Simarde, Les Favrauds, Puits de Nanteuil, Queroy, Chazelles, Bouex, dir Roprie à gauche Dignac, Courrière, Dirac, Puymoyen"
     },
     {
@@ -408,7 +368,6 @@
       ],
       "name": "Vendoire",
       "distanceKm": 87,
-      "garminUrl": "https://connect.garmin.com/modern/course/83339032",
       "itinerary": "Puymoyen, Dirac, Roprie, à droite, la Laiterie, Vallée de l’Echelle, Rougnac, la Rochebeaucourt, Rte de Verteillac, Goûts & Rossignol, avant Nanteuil & Auriac de Bourzac à droite, en haut en face, au Camping 2e à droite dir. le Buguet, en haut à gauche Vendoire, à droite après Eglise de Vendoire, Champagne, à gauche à l’église, dir.Villebois Lavalette, avt Villebois à droite, sous Château de Villebois, à droite Maison Blanche, Silo, Magnac Lavalette, la Mercerie, Torsac, Dirac, Puymoyen."
     },
     {
@@ -419,7 +378,6 @@
       "name": "Cognac",
       "distanceKm": 135,
       "elevationM": 816,
-      "garminUrl": "https://connect.garmin.com/modern/course/324884748",
       "itinerary": "Puymoyen, Combe de Loup, Voeuil, La Couronne, Pombreton, Sireuil, Saint Simeux, Chateauneuf, Bouteville, Segonzac, D49, Gensac La Pallue, D49, Rond Point de La Trache, D15 Saint Brice, Chassors, Jarnac, Triac, Bassac, Saints Simon & Simeux, Sireuil, Nersac, Motocross, Torsac, Dirac, Puymoyen"
     },
     {
@@ -429,7 +387,6 @@
       ],
       "name": "Hiersac",
       "distanceKm": 95,
-      "garminUrl": "https://connect.garmin.com/modern/course/83339709",
       "itinerary": "Puymoyen, Dirac, Torsac, Andole, à gauche les Naulets, Mouthiers, la Rochandry, à gauche sur D42, Roullet, ancienne RN, Berguille, prendre D22, Chateauneuf, Gare, sur D84, St Simeux, chez Cagnon, à gauche, Champmillon, sur D7, Hiersac, sur D96, Asnière/Nouère, Marsac, à droite sur D115, D117, Rouhenac, Coursac à gauche D37, Argence, sur D37, Champniers, le Poteau, Ruelle, Touvre, Ste Catherine, Puymoyen."
     },
     {
@@ -440,7 +397,6 @@
       "name": "Montbron",
       "distanceKm": 105,
       "elevationM": 708,
-      "garminUrl": "https://connect.garmin.com/modern/course/324886835",
       "itinerary": "Puymoyen, Dirac, Roprie, Bouex, Marthon, javerlhac, Etouars, zn haut à gauche D91, La Tricherie, Montbron, Vouthon, La Chaise à droite, gauche Les Nilloux, Rancogne, Chazelles, Marsac, La Brouterie, Queroy, Bois Blanc, Magnac, Sainte Catherine, Puymoyen"
     },
     {
@@ -450,7 +406,6 @@
       ],
       "name": "Yvrac",
       "distanceKm": 78,
-      "garminUrl": "https://connect.garmin.com/modern/course/82679677",
       "itinerary": "Puymoyen, Dirac, Ste Catherine, Garat, Gare, en face Bois Blanc, le Queroy, à droite Pranzac, à gauche Bunzac, rd pt à droite les Pascauds, à gauche dir. la Rochefoucauld, Olérat, à droite, sur D205 en face Gare, à droite sur D13 rte de l’Arbre, à droite sur D62 dir. Malleyrand, en haut à droite sur D110 dir. St Sornin, la Faurie à gauche dir. la Fenêtre, à droite Cave de St Sornin, à gauche sur D6 dir. Montbron, à droite dans virage sur D415 dir. la Chaise, à droite sur D699, Moulins sur Tardoire, à gauche D109 dir. St Germain de Montbron, les Chaillats, à dte chez Poirier, Chazelles, la Morandie, la Petitie, Bouex, Roprie, Dirac, Puymoyen"
     },
     {
@@ -461,7 +416,6 @@
       "name": "Rouillac",
       "distanceKm": 113,
       "elevationM": 796,
-      "garminUrl": "https://connect.garmin.com/modern/course/325043777",
       "itinerary": "Puymoyen, Combe de Loup, Voeuil, La Couronne, Déchetterie, Saint Michel, Pont de Basseau, Linars, Saint saturnin, Hiersac, Echallat, Rouillac, Vaux Rouillac,,Fleurac, Merignac, Bassac, Vibrac, Saint Simeux, Sireuil, Pombreton, Emmaus, La Couronne, Motocross, Voeuil Torsac, Dirac, Puymoyen"
     },
     {
@@ -471,7 +425,6 @@
       ],
       "name": "Salles Lavalette",
       "distanceKm": 75,
-      "garminUrl": "https://connect.garmin.com/modern/course/82760597",
       "itinerary": "Puymoyen, Dirac, Torsac, à gauche et à droite sur D101 dir. Etang Genevreau, Puymard à gauche Fouquebrune, cimetière, en haut à droite Le Roc, en face sur D19, Juillaguet, route des Crêtes, après carrefour Salles Lavalette à gauche sur D457, Salles Lavalette, en bas à gauche sur D17 dir. Gurat, Ronsenac, l’Ombre, Mercerie, Torsac, Dirac, Puymoyen."
     },
     {
@@ -482,7 +435,6 @@
       "name": "Champniers Reilhac",
       "distanceKm": 117,
       "elevationM": 1153,
-      "garminUrl": "https://connect.garmin.com/modern/course/325045619",
       "itinerary": "Puymoyen, Dirac, Sers par la Laiterie, Grassac, Marthon, Feuillade, La Tricherie, Bussière Badil, Busserolles, Champniers Reilhac, Maisonnais, Les Limousines, Montbron, Vouthon, La Chaise, Le Chataigner, rond point Saint Paul, Chazelles, Bouex, Roprie, Dirac, Puymoyen"
     },
     {
@@ -492,7 +444,6 @@
       ],
       "name": "Tour Angouleme",
       "distanceKm": 79,
-      "garminUrl": "https://connect.garmin.com/modern/course/139230088",
       "itinerary": "Puymoyen, Dirac, Torsac, Voeuil, Sterling, Motocross, la Couronne, Mairie, Cimenterie, dir. Nersac, sous pt RN 10, ZE Nersac, Pt de la Meure, à gauche sur D41, Villars, à droite, St Saturnin, dans bourg à droite dir. Linars, ds à gauche Marteau, à gauche D120, rue de la Grelière, à droite avant rte de Cognac, sur D137, Echangeur Brénat, rester sur D37, Vindelle, à droite Balzac, gauche droite, Vouillac, Champniers, Poteau, Ruelle, Vaugeline, Cimetière, Fourville, Touvre, Ste Catherine, Dirac, Puymoyen."
     },
     {
@@ -503,7 +454,6 @@
       "name": "Aubeterre",
       "distanceKm": 119,
       "elevationM": 909,
-      "garminUrl": "https://connect.garmin.com/modern/course/325050410",
       "itinerary": "Puymoyen, Dirac, Torsac, Puymard, Fouquebrune, Juillaguet, Ronsenac, Gurat, D17, Palluaud, Saint Séverin, Aubeterre, Bors de Montmoreau, Juignac, Juillaguet, Fouquebrune, Obévie, Torsac, Dirac, Puymoyen"
     },
     {
@@ -513,7 +463,6 @@
       ],
       "name": "Moulidars",
       "distanceKm": 94,
-      "garminUrl": "https://connect.garmin.com/modern/course/241839332",
       "itinerary": "Puymoyen, Dirac, Torsac, Andole, Voeuil, Motocross, la Couronne, Pombreton, Sireuil, chez Cagnon, en face sur D7 dir. Champmillon, Hiersac, au carrefour à gauche sur D41, à gauche sur D405 dir. Moulidars, à gauche sur D63 dir. Vibrac, Ecole, à gauche dir. Champillon, après carrefour D14, 2e route à droite, en bas à gauche dir.Champmillon, chez Cagnon, Sireuil, Pombreton, la Couronne, Motocross, Voeuil, Torsac, Puymoyen."
     },
     {
@@ -524,7 +473,6 @@
       "name": "Plassac",
       "distanceKm": 117,
       "elevationM": 804,
-      "garminUrl": "https://connect.garmin.com/modern/course/325051808",
       "itinerary": "Puymoyen, Dirac, Torsac, La Mercerie, L'Ombre à droite direction Charmant, Saint Acquitière, Voulgezac, Plassac, D107, Etriac, Chateauneuf, saint Simeux, Sireuil, traversée de Nersac direction Saint Michel, La Couronne, Lippi, Etang Genevreau tout droit, Le Roc à gauche, Fouquebrune, Obévie, Torsac, Dirac, Puymoyen"
     },
     {
@@ -534,7 +482,6 @@
       ],
       "name": "Graves St Amant",
       "distanceKm": 91,
-      "garminUrl": "https://connect.garmin.com/modern/course/82764210",
       "itinerary": "Puymoyen, Dirac, la Petite Courrière, à droite, Puymerle, à droite et à gauche sur D428, l’Andole, à droite Voeuil, Sterling, Motocross, la Couronne, Pombreton, Nersac, Pont de la Meure, à gauche sur D84, les Allins, tout droit au carrefour, à gauche chez Cagnon, à gauche et à droite sur D72 dir. Vibrac, St Simon sur D22, Juac à gauche sur D155 Graves st Amant, à gauche sur D10 dir. Chateauneuf, Chateauneuf, sur D699 dir. Nersac, Pombreton, la Couronne, Motocross, Sterling, Voeuil, Torsac, Dirac, Puymoyen."
     },
     {
@@ -544,7 +491,6 @@
       ],
       "name": "Montboyer",
       "distanceKm": 103,
-      "garminUrl": "https://connect.garmin.com/modern/course/81511268",
       "itinerary": "Puymoyen, Combe de Loup, Torsac, Obévie, Fouquebrune, la Chassagne, Etang Genevreau, Boisné la Tude ( Charmant), dir. Montmoreau sur D16, St Cybard, St Eutrope, à gauche dir. Montmoreau, à droite sur D24 dir. Courgeac dans virage, à gauche, Courgeac D141 à gauche, route de Chalais, droite et gauche à Peudry sur D21, à droite sur D89 et à gauche dir. Moulin Rabier, chez Gigon, à droite Montboyer, Eglise, en face, chez Berthelot à droite, droite et gauche sur D137, St Laurent des Combes, à droite sur D70 St Martial, D70 Courgeac, en face, droite et gauche, Chabreville, le Pinier, à gauche sur D10, à droite dir. Pérignac sur D46, après route de Pérignac, à gauche sur la Meulière, tout droit, Mouthiers, rond point des chevaux, Sterling, Voeuil, Andole, Combe de Loup, Puymoyen."
     },
     {
@@ -554,7 +500,6 @@
       ],
       "name": "Perignac",
       "distanceKm": 86,
-      "garminUrl": "https://connect.garmin.com/modern/course/82670797",
       "itinerary": "Puymoyen, Dirac, Torsac, Andole, à gauche les Naulets, Mouthiers, D12, sur D5, Blanzac, à gauche sur D54, Pérignac, Eglise, à gauche sur D46, à droite sur D54, Abbaye de Puyperoux, sur D54, la Gautrie, Aignes et Puyperoux, tout droit sur D54, à gauche sur D16, Ronsenac, sortie Ronsenac à gauche sur D123, Juillaguet, droite gauche sur D123, Charmant, Fouquebrune, Obévie, Torsac, Dirac, Puymoyen."
     },
     {
@@ -564,7 +509,6 @@
       ],
       "name": "Vitrac",
       "distanceKm": 103,
-      "garminUrl": "https://connect.garmin.com/modern/course/81004283",
       "itinerary": "Puymoyen, Dirac, Roprie, Bouex, la Petitie, Chazelles, St Paul, Vouthon, Canoé, Orgedeuil, Yvrac et Malleyrand, dir. Chasseneuil, avt échangeur, à la Garde à droite sur D173 dir. Vitrac, la Grange en face, Jayat à droite sur D162 dir. St Adjutory, St Adjutory, en face et à gauche sur D60 Fleurignac, la Rochefoucaud, au feu à gauche, pompiers au feu à gauche, route de Montbron, à droite et à gauche sur route de Chazelles, les Pascauds, à droite dir. Bunzac, Pranzac, le Queroy, à gauche sur pont chemin de fer Bois Blanc, Garat, Ste Catherine, Puymoyen."
     },
     {
@@ -574,7 +518,6 @@
       ],
       "name": "Bellevigne",
       "distanceKm": 98,
-      "garminUrl": "https://connect.garmin.com/modern/course/82765725",
       "itinerary": "Puymoyen, Dirac, Torsac, Voeuil, Motocross, la Couronne, les Aubreaux, rester sur ex RN, à droite ZE du Plessis, rond point à droite sous LGV, avant pont RN10 à droite, longer RN, sur D12, sur D42 dir. Chateauneuf, Chateauneuf, sur D84 dir. Bellevigne (Malaville), à gauche sur D152, en haut à droite sur D14, à gauche sur D129, Petit Bonneuil, en bas à gauche sous RN, sur D129 dir. Péreuil, à gauche sur D124 Aubeville, tout droit sur D124 Mainfonds, tout droit sur D107 les Aireaux, Plassac, Gersac sur D107, Mouthiers, rond point des Chevaux, Bourrisson, Sterling, Voeuil, Torsac, Dirac, Puymoyen."
     },
     {
@@ -584,7 +527,6 @@
       ],
       "name": "Montignac",
       "distanceKm": 103,
-      "garminUrl": "https://connect.garmin.com/modern/course/81452416",
       "itinerary": "Puymoyen,Ste Catherine, Touvre, Mornac, Jardinerie, à gauche, les Favrauds, en face Brie, Brie bourg D91, Cherves, à gauche Anais, Tourriers, sortie Tourriers à gauche Villejoubert, St Amant de Boixe, Montignac, droite gauche, Marsac, en face Asnières sur Nouère, Marange, Hiersac, chez Cagnon, Sireuil, Nersac, Pombreton, la Couronne Motocross, Sterling, Voeuil, Torsac, Dirac, Puymoyen."
     },
     {
@@ -594,7 +536,6 @@
       ],
       "name": "Javerlhac",
       "distanceKm": 82,
-      "garminUrl": "https://connect.garmin.com/modern/course/83408454",
       "itinerary": "Puymoyen, Dirac, Roprie, la Laiterie, Vallée de l’Echelle, Rougnac, Charras, Mainzac, Hautefaye, tout droit, carrefour prendre à gauche sur D93, Javerlhac, Feuillade, Marthon, Grassac, Réserve de chasse sur D34, prendre à droite sur D412, Vouzan, Sers route d'Angoulême, Roprie, Dirac, Puymoyen"
     },
     {
@@ -604,7 +545,6 @@
       ],
       "name": "Rouillac",
       "distanceKm": 102,
-      "garminUrl": "https://connect.garmin.com/modern/course/81449599",
       "itinerary": "Puymoyen,Ste Catherine, Magnac sur Touvre, Ruelle, Relette, route de Champniers, le poteau, Champniers, Argence, à droite rte de Montignac D737, Vouharte, Marcillac Lanville, en face sur D357, à gauche route de Rouillac, Gourville, D736, Rouillac, en face sur D14 dir. Echallat, l’Habit, Hiersac, à gauche avant route de Cognac sous pont, St Saturnin, Nersac, Pont de la Meure, route d’Angoulême, à droite route du peux, Emmaüs, la Couronne, Motocross, Poulet, Charsé, les Eaux Claires, Puymoyen."
     },
     {
@@ -614,7 +554,6 @@
       ],
       "name": "Vendoire",
       "distanceKm": 83,
-      "garminUrl": "https://connect.garmin.com/modern/course/83408699",
       "itinerary": "Puymoyen, Dirac, Torsac, gauche et droite dir. Etang Genevreau, Puymard, à gauche dir. Fouquebrune, le Roc, en face, Juillaguet, route des Crêtes, à gauche sur D143, Vaux-Lavalette, à gauche sur D17, Gurat, à droite sur D81, Vendoire, à gauche, Champagne, Eglise, tout droit, Fontaine, à gauche et à droite, après bois à gauche les Beauvais, chez Favier, en bas à droite Nadaillac, les Fieux, la Rochebeaucourt, sur D87, Rougnac, Cloulas, Dignac, en face Salle Polyvalente, à droite cimetière, en face la Petite Courrière, à droite, Dirac, Puymoyen"
     },
     {
@@ -624,7 +563,6 @@
       ],
       "name": "La Tour Blanche",
       "distanceKm": 95,
-      "garminUrl": "https://connect.garmin.com/modern/course/81450880",
       "itinerary": "Puymoyen, Combe de Loup, Torsac, Mercerie, Magnac-lavalette bourg, Villebois,Tennis, route de Fontaine, Goût Rossignol sur D2, la Tour Blanche, à gauche sur D84, les Potences, à gauche sur D93 Vieux Mareuil, à gauche et à droite, à gauche dans bourg après Eglise, route de Nontron, en face et à gauche dir. Puyrenier, les Graulges, D109 dir. Charras, Maison Neuve, à gauche Coussadeau, la Laiterie, Roprie, Dirac, Puymoyen."
     },
     {
@@ -634,7 +572,6 @@
       ],
       "name": "Boisne la Tude",
       "distanceKm": 85,
-      "garminUrl": "https://connect.garmin.com/modern/course/83408863",
       "itinerary": "Puymoyen, Dirac, Roprie, à droite la Laiterie, à droite sur D73 dir. Dignac, à gauche sur D41, Cloulas à droite sur D34, couper route de Périgueux direction Villars, Villars, à droite sur D34, Magnac Lavalette, à droite sur D81, Mercerie à gauche sur D43 dir. Fouquebrune, avant Fouquebrune à gauche direction Juillaguet,dans Juillaguet à droite sur Charmant, à gauche sur D440, D16 dir. Montmoreau, avant pont Chemin de fer à gauche sur D450, Chalivaud, route des crêtes, à gauche sur D19, à droite sur D16, dir. Ronsenac, l'Ombre, Torsac, Dirac, Puymoyen."
     },
     {
@@ -644,7 +581,6 @@
       ],
       "name": "Verteillac",
       "distanceKm": 96,
-      "garminUrl": "https://connect.garmin.com/modern/course/81507939",
       "itinerary": "Puymoyen, Dirac, Torsac, Mercerie, Magnac Lavalette Bourg, à droite Villebois, les Maisons Blanches, route d’Edon, sous le Château à droite, sur route de Fontaine à gauche, à droite sur D101 dir. Champagne, à droite Vendoire, à gauche dans Bourg, à droite sur les crêtes, à droite descendre dir. Camping, à gauche dir. Nanteuil Auriac, à gauche sur D101 dir. la Chapelle Grésignac, Verteillac, route de la Rochebeaucourt D708, la Rochebeaucourt, Rougnac, Vallée de l’Echelle, la laiterie, Roprie, Dirac, Puymoyen."
     },
     {
@@ -654,7 +590,6 @@
       ],
       "name": "Gout Rossignol",
       "distanceKm": 84,
-      "garminUrl": "https://connect.garmin.com/modern/course/80950003",
       "itinerary": "Puymoyen, Dirac, Torsac, Magnac Lavalette Bourg, Villebois, Super U, tennis, Fontaine, Goût Rossignol, à gauche dir. Mareuil, dir. Nontron, à gauche Puyrenier, les Graulges, Charras, Sers, rond point à gauche la laiterie, Roprie, Dirac, Puymoyen."
     },
     {
@@ -664,7 +599,6 @@
       ],
       "name": "Merignac",
       "distanceKm": 95,
-      "garminUrl": "https://connect.garmin.com/modern/course/81504678",
       "itinerary": "Puymoyen, Combe de Loup, Andole, Voeuil, Sterling, Motocross, la Couronne, Pombreton, Sireuil, chez Cagnon, à gauche, St Simeux, à droite bourg, à gauche, Vibrac, St Simon, Bassac, à droite, Bourras, Mérignac, Echallat, à droite, l’Habit, Hiersac, St Saturnin, D53 chez Cagnon, à gauche, Sireuil, Pombreton, la Couronne, Motocross, Sterling, Voeuil, Andole, Combe de Loup, Puymoyen."
     },
     {
@@ -674,7 +608,6 @@
       ],
       "name": "Montbron",
       "distanceKm": 81,
-      "garminUrl": "https://connect.garmin.com/modern/course/28823951",
       "itinerary": "Puymoyen, Dirac, Roprie, Vallée de l'Echelle, Rougnac, Charras, en face descendre bourg, sur D163, Feuillade, à droite, avant cimetière à gauche sur D163, chez Vincent, à gauche dir. Montbron, Canoé, Vouthon, Pranzac, le Quéroy, Mornac, Touvre, Ste Catherine, Puymoyen."
     },
     {
@@ -684,7 +617,6 @@
       ],
       "name": "Gout Rossignol",
       "distanceKm": 98,
-      "garminUrl": "https://connect.garmin.com/modern/course/80936360",
       "itinerary": "Puymoyen, Dirac, Torsac, Magnac Lavalette Bourg, Villebois, Super U, tennis, Fontaine, Goût Rossignol, en face, la Tour Blanche, à gauche D84, les Potences à gauche Vieux Mareuil, cimetière, gauche et droite, gauche sortie Vieux Mareuil, route Mareuil Nontron, en face Puyrenier, les Graulges, Charras, Sers, rond point à gauche la Laiterie, Roprie, Dirac, Puymoyen."
     },
     {
@@ -694,7 +626,6 @@
       ],
       "name": "Etriac",
       "distanceKm": 88,
-      "garminUrl": "https://connect.garmin.com/modern/course/83494278",
       "itinerary": "Puymoyen, Dirac, Torsac, à gauche, à droite dir. Etang Genevreau, Houme, à gauche sur D19, à droite sur route de Chateauneuf D5, prendre à gauche sur route Montmoreau sur 200m puis en face dir. Chadurie, St Aquitière, à gauche sur D438 Chadurie, en haut à droite sur D46 dir. Pérignac, à droite sur D54, Pérignac, Eglise, chez Tripelou, Blanzac, Gendarmerie, sur D10 route de Val des Vignes (Jurignac), Etriac, Val des Vignes suivre D10 puis au rond point Mongolfière, prendre ex RN dir. Roullet, Berguille, rester sur ex RN, rond point à gauche sur pont RN les Barbots, ZE de Fontaine repasser sous la RN, rond point à gauche dir. la Couronne, la Couronne, Motocross, Sterling, Voeuil, Torsac, Dirac, Puymoyen."
     },
     {
@@ -704,7 +635,6 @@
       ],
       "name": "Vibrac",
       "distanceKm": 93,
-      "garminUrl": "https://connect.garmin.com/modern/course/81845813",
       "itinerary": "Puymoyen, Dirac, Torsac, Voeuil, Sterling, à gauche dir. Mouthiers, rond point des chevaux, à droite, la Couronne, droite et gauche, Av. Jean Moulin, à droite Allée des Sports, à gauche rue du stade, Super U, gauche et droite Chem. des Barrets, à gauche après le pont de la RN 10, Nersac le Peux, à gauche, à droite, Pont de la Meure, à gauche les Allins, tout droit au carrefour, à droite, chez Cagnon, à gauche et à droite sur D72 route de Vibrac, Vibrac 2 fois à gauche sur D22 route de Chateauneuf, à gauche dir. St Simeux, à droite sur le pont dir. Mosnac, Mosnac à gauche sur D422, en haut à gauche dir. Nersac, au rond point à droite sur D7 dir. Roullet st Estèphe, avant carrefour à gauche, Barbe Blanche, tout droit longer la RN10, ZE du Plessis, tout droit sous la RN10, la Goujarde, à droite rue des courtes versennes, à gauche rue du communal et à droite, rue des 2 porches, à gauche rue des longées, après pont de chemin de fer à droite et 2 fois à gauche sur route de la Couronne, la Couronne centre, Motocross, Voeuil, Torsac, Dirac, Puymoyen."
     },
     {
@@ -714,7 +644,6 @@
       ],
       "name": "Sireuil",
       "distanceKm": 83,
-      "garminUrl": "https://connect.garmin.com/modern/course/83497932",
       "itinerary": "Puymoyen, Dirac, la Petite Courrière, à droite, Puymerle, à droite et à gauche l’Andole, à droite Voeuil, Sterling, Motocross, la Couronne, Pombreton, Nersac, Mosnac, Chateauneuf, Gare, St Simeux, chez Cagnon, Sireuil, Nersac, Pombreton, la Couronne, Motocross, Sterling, Voeuil, l’Andole à gauche, en haut à droite et à gauche, Puymerle, la Petite Courrière, à gauche, Dirac, Puymoyen."
     },
     {
@@ -724,7 +653,6 @@
       ],
       "name": "Pillac",
       "distanceKm": 92,
-      "garminUrl": "https://connect.garmin.com/modern/course/80945591",
       "itinerary": "Puymoyen, Dirac, Torsac, à gauche et à droite Puymard, à gauche Fouquebrune, le Roc, Juillaguet, route des crêtes, à droite sur D24 et à gauche sur D142 Juignac, à gauche et à droite sur D10 dir. Bors de Montmoreau, à gauche Pillac, à gauche sur D78 Montignac le coq, Palluaud, Gurat, Ronsenac, l’Ombre, Torsac, Dirac, Puymoyen."
     },
     {
@@ -734,7 +662,6 @@
       ],
       "name": "Champmillon",
       "distanceKm": 72,
-      "garminUrl": "https://connect.garmin.com/modern/course/83280237",
       "itinerary": "Puymoyen, Dirac, la Petite Courrière à droite, route de Torsac, à droite et à gauche l’Andole, à droite Voeuil, Sterling, Motocross, la Couronne, Pombreton, à droite Nersac, Eglise, Pont de la Meure, à gauche sur D41 dir. Champmillon, chez Cagnon, à gauche, à gauche sur D84, les Allins, à droite Pont de la meure, Nersac, Pombreton, la Couronne, Motocross, Sterling, Voeuil, Torsac, Dirac, Puymoyen."
     },
     {
@@ -744,7 +671,6 @@
       ],
       "name": "Beaussac",
       "distanceKm": 88,
-      "garminUrl": "https://connect.garmin.com/modern/course/81841427",
       "itinerary": "Puymoyen, Dirac, Roprie, la Laiterie, Rougnac, Combiers, les Graulges, Beaussac, à gauche, Mairie, Bretanges, à droite, à gauche la Garde, à gauche, Charras, à droite, Grosbot, dir. Sers, à droite Vieux Vouzan, avant Vouzan à gauche Cimetière, Bouex, à droite, à gauche et à droite sur D411 la Bourlie, les Forêts, à droite le Quéroy, à gauche Mornac, Touvre, Ste Catherine, Puymoyen."
     },
     {
@@ -754,7 +680,6 @@
       ],
       "name": "Dignac",
       "distanceKm": 70,
-      "garminUrl": "https://connect.garmin.com/modern/course/83494939",
       "itinerary": "Puymoyen, Dirac, la Petite Courrière à gauche, à droite Monboeuf, à droite Torsac, gauche et droite sur D101 dir. Etang Genevreau, Puymard, à gauche sur D43 dir. Fouquebrune, à gauche sur D122 Obévie, en face dir. Dignac, sur D41, Cloulas, Rougnac, Vallée de l’Echelle, Sers, Vouzan, sortie Vouzan à gauche sur D412, le Chatelard, à gauche sur D4 Bouex, Roprie, Dirac, Puymoyen."
     },
     {
@@ -764,7 +689,6 @@
       ],
       "name": "Jurignac",
       "distanceKm": 87,
-      "garminUrl": "https://connect.garmin.com/modern/course/81522383",
       "itinerary": "Puymoyen, Combe de loup, Andole, les Naulets, Mouthiers, Gersac, Plassac, les Aireaux, Etriac, Val des Vignes (Jurignac), Malaville, en haut à droite sur D152, Bouteville, en face D404 Angeac Charente, droite gauche, Vibrac, gauche droite école, à droite, chez Cagnon, en face, la Meure, Nersac, le Peu, la Fuie, à droite, Emmaüs, la Couronne, Lippi, rond point des chevaux, tout droit, à gauche le Rosier, Voeuil, Andole, Combe de Loup, Puymoyen."
     },
     {
@@ -774,7 +698,6 @@
       ],
       "name": "Mainfonds",
       "distanceKm": 78,
-      "garminUrl": "https://connect.garmin.com/modern/course/139559020",
       "itinerary": "Puymoyen, Dirac, Torsac, Andole, les Naulets, Mouthiers, dir. Blanzac puis à droite D107, Gersac, sur D107 Plassac, à gauche dir. Bécheresse, à droite dans la descente dir. Champagne Vigny, la Charbonnière, Champagne Vigny, à gauche et à droite sur D436 dir. Mainfonds, chez Moisan, à droite Mainfonds, en haut tout droit, en face Les Aireaux, dans Plassac à gauche, sur D22 à gauche, juste après pont LGV à droite dir. Claix, Claix, dir. Berguille, dans virage à droite dir. Roullet, Roullet, à droite dir. Mouthiers, sous les 2 ponts LGV, à droite Mouthiers par Rochandry, rond point des chevaux 1ère à droite, à gauche les Naulets, Andole, Torsac, Dirac, Puymoyen."
     },
     {
@@ -784,7 +707,6 @@
       ],
       "name": "Pont a Brac",
       "distanceKm": 84,
-      "garminUrl": "https://connect.garmin.com/modern/course/81608011",
       "itinerary": "Puymoyen, Combe de Loup, Andole, Voeuil, Sterling, Motocross, la Couronne, Roullet, ancienne RN, Jurignac, Pont à Brac, à droite sur D14, Chateauneuf, Mosnac, St Simeux, chez Cagnon, à gauche sur D84, la Meure, ZE Nersac, en haut à droite au rond point et à gauche sur route du Grand Maine, à droite chemin de la Mondonne, la Couronne, Motocross, Sterling, Voeuil, Andole, Combe de Loup, Puymoyen."
     },
     {
@@ -794,7 +716,6 @@
       ],
       "name": "La Rochebeaucourt",
       "distanceKm": 71,
-      "garminUrl": "https://connect.garmin.com/modern/course/83495646",
       "itinerary": "Puymoyen, Dirac, Roprie, la Laiterie, Rougnac, la Rochebeaucourt, dir. Verteillac sur D12, à droite les Fieux, Blanzaguet, à gauche sur D5, Villebois, Maison Blanche, Magnac Lavalette, la Mercerie à gauche sur D43 Fouquebrune, sur D122, Obévie, en face, la Marotte, les Garands, la Petite Courière, Dirac, Puymoyen."
     },
     {
@@ -804,7 +725,6 @@
       ],
       "name": "Montbron",
       "distanceKm": 81,
-      "garminUrl": "https://connect.garmin.com/modern/course/81509187",
       "itinerary": "Puymoyen, Dirac, Roprie, Vallée de l’Echelle, Rougnac, Charras, Feuillade, chez Vincent, à gauche dir. Montbron, Montbron, Canoé, Vouthon, Pranzac, le Quéroy, Mornac, Touvre, Ste Catherine, Puymoyen."
     },
     {
@@ -814,7 +734,6 @@
       ],
       "name": "Rancogne",
       "distanceKm": 67,
-      "garminUrl": "https://connect.garmin.com/modern/course/83495813",
       "itinerary": "Puymoyen, Ste Catherine, Garat, en face, Bois Blanc, le Quéroy, à droite, Pranzac, à gauche, Bunzac, rond point à droite sur D110, les Pascauds, à droite et à gauche, Rancogne, D110, à droite sur D6, Saint Sornin, la Chaise, à gauche Vouthon, à droite sur D108, Saint Germain, à droite Rochepine, Chazelles, à gauche, la Morandie, la Petitie, à droite, Bouex, Roprie, Dirac, Puymoyen."
     },
     {
@@ -824,7 +743,6 @@
       ],
       "name": "Roullet",
       "distanceKm": 83,
-      "garminUrl": "https://connect.garmin.com/modern/course/81277052",
       "itinerary": "Puymoyen, Dirac, Torsac, Voeuil, Sterling, Motocross, la Couronne, Pombreton, Nersac, dir. Chateauneuf, à droite Mosnac, Chateauneuf, route d’Angoulême D22, après virage à droite dir. St Estèphe, à gauche avant Eglise, sous pont RN 10 à gauche Berguille, Roullet, à droite au rond point dir. Mouthiers, les Tourbières, Rochandry, à gauche, après garage à gauche, 2e route à droite dans lotissement « les justices », à gauche route d’Angoulême, rond point des chevaux, Sterling, Voeuil, Torsac, Dirac, Puymoyen."
     },
     {
@@ -834,7 +752,6 @@
       ],
       "name": "Vaux Lavalette",
       "distanceKm": 71,
-      "garminUrl": "https://connect.garmin.com/modern/course/83496153",
       "itinerary": "Puymoyen, Dirac, Torsac, Fouquebrune, en haut à droite, Juillaguet, sur D19, à droite sur D16 dir. Montmoreau, à gauche avant le pont chemin de Fer sur D450, route des crêtes, à droite, à gauche sur D143 dir. Vaux Lavalette, Vaux Lavalette, en bas à gauche sur D17 Gurat, Ronsenac, l’Ombre, Mercerie, Torsac, Dirac, Puymoyen."
     },
     {
@@ -844,7 +761,6 @@
       ],
       "name": "Jauldes",
       "distanceKm": 81,
-      "garminUrl": "https://connect.garmin.com/modern/course/80947675",
       "itinerary": "Puymoyen, Dirac, Ste Catherine, Touvre, Ruelle Puyguillen, cimetière, Poteau Champniers, rond point à droite la Simarde, Brie, Cherves, à gauche Anais, à droite route des Bouffanais, D88 à droite Treillis, Jauldes, route d’Agris, dans la Braconne à droite dir. la Grande Fosse, rond point Brie 3e à gauche la Prévoterie, les Favrauds, derrière Jardinerie, Bois Blanc, Touvre, Ste Catherine, Dirac, Puymoyen."
     },
     {
@@ -854,7 +770,6 @@
       ],
       "name": "La Rochefoucauld",
       "distanceKm": 69,
-      "garminUrl": "https://connect.garmin.com/modern/course/83056602",
       "itinerary": "Puymoyen, Dirac, Roprie, Bouex, la Petitie, Chazelles, en face St Paul, rond point en face dir. la Rochefoucauld, Romagne, la Rochefoucauld, ancienne RN à gauche, à droite après marchand de vélo, à gauche Place St Florent, Château, Rivières, chez Salot, tout droit sur D88, dans la forêt carrefour à gauche dir. la Grande Fosse sur D12, à gauche sur D113 la Jauvigère, les Frauds, les Favrauds, sur D113 Mornac Quartier Chabasse, à droite Mornac bourg, salle des Fêtes, feu à droite, Touvre, Ste Catherine, Puymoyen."
     },
     {
@@ -864,7 +779,6 @@
       ],
       "name": "Rougnac",
       "distanceKm": 83,
-      "garminUrl": "https://connect.garmin.com/modern/course/82669080",
       "itinerary": "Puymoyen, Dirac, Ste Catherine, les Varennes, à droite dir. Bouex sur D410, les Grands Moulins, à droite et à gauche sur la Laiterie, Vallée de l’échelle, Charbontière, à gauche dir. Grassac, l’Hermite, en face au carrefour sur D34, Réserve de chasse, Grassac, à gauche Marthon, Feuillade, à droite après Bar, Coufour, à gauche sur D111 Mainzac, à droite cimetière, Charras, Rougnac, Cloulas, à gauche, route de Périgueux, à droite et à gauche, la Côte, les Garands, Torsac, Dirac, Puymoyen."
     },
     {
@@ -874,7 +788,6 @@
       ],
       "name": "Voulgezac",
       "distanceKm": 66,
-      "garminUrl": "https://connect.garmin.com/modern/course/83284609",
       "itinerary": "Puymoyen, Dirac, Torsac, la Mercerie, à droite sur D43 dir. Fouquebrune, à gauche la Chassagne, à gauche sur D19, au carrefour à droite et à gauche sur D39 dir. Boisné la Tude (Charmant), tout droit dans Bourg, à gauche Silo, à droite sur D674, à gauche sur D5 dir St Acquitière, à droite dir. Voulgézac, à droite sur D12 dir. Mouthiers, rond point des chevaux, Sterling, Voeuil, Torsac, Dirac, Puymoyen."
     },
     {
@@ -884,7 +797,6 @@
       ],
       "name": "Rivieres",
       "distanceKm": 77,
-      "garminUrl": "https://connect.garmin.com/modern/course/83326567",
       "itinerary": "Puymoyen, Ste Catherine, Garat,Touvre, Mornac, cimetière, route des Fontaines, routes des Favrauds, les Rassats, les Frauds, D113, la Jauvigère, droite gauche, le Temple, Cherves à droite sur D91, Jauldes, à droite sur D11, les Granges d’Agris, à droite, à gauche de la lanterne, Agris, Rivières, dir. La Rochefoucauld, Château de la Rochefoucauld, tout droit St Florent, à droite la Chabanne, à droite et à gauche dir. Bunzac, tout droit au rond point dir. Pranzac, avant cimetière à droite dir. la Brouterie, le Queroy, à gauche, pont chemin de fer, Bois Blanc, Garat, après Mairie à droite, Villars, à gauche, Ste Catherine, Puymoyen."
     },
     {
@@ -894,7 +806,6 @@
       ],
       "name": "Blanzaguet",
       "distanceKm": 67,
-      "garminUrl": "https://connect.garmin.com/modern/course/83497713",
       "itinerary": "Puymoyen, Dirac, Torsac, Château de la Mercerie, route de Villebois, tout droit dir. Edon, après virage à droite dir. Blanzaguet, Blanzaguet, rond point à droite, en haut à gauche sur D23, après virage, à droite les Jauffrenies à gauche sur D101 Champagne, à droite après l’église, Vendoire, à droite dir. Gurat, Gurat, à gauche dir. Ronsenac, l’Ombre, Torsac, Dirac, Puymoyen."
     },
     {
@@ -904,7 +815,6 @@
       ],
       "name": "Sireuil",
       "distanceKm": 87,
-      "garminUrl": "https://connect.garmin.com/modern/course/81510252",
       "itinerary": "Puymoyen, Dirac, la Petite Courrière, à droite Puymerle, à droite et à gauche, l’Andole, à droite, Voeuil, Poulet, Motocross, la Couronne, Pombreton, Nersac, Mosnac, Chateauneuf, Gare, St Simeux, chez Cagnon, Sireuil, Nersac, Pombreton, la Couronne, Motocross, Sterling, Voeuil, Torsac, Dirac, Puymoyen."
     },
     {
@@ -914,7 +824,6 @@
       ],
       "name": "Marthon",
       "distanceKm": 66,
-      "garminUrl": "https://connect.garmin.com/modern/course/82647238",
       "itinerary": "Puymoyen, Ste Catherine, Touvre, Mornac, le Queroy, Pranzac, Vouthon, à droite sur D108, St Germain, sur D33 Marthon, sur D16, Grassac, dir. Rougnac, au carrefour D16 D25, à droite, Maisons Neuves, Sers route Angoulême, Roprie, Dirac, Puymoyen."
     },
     {
@@ -924,7 +833,6 @@
       ],
       "name": "Salles Lavalette",
       "distanceKm": 75,
-      "garminUrl": "https://connect.garmin.com/modern/course/81509567",
       "itinerary": "Puymoyen,Dirac, Torsac, Mercerie, Ronsenac, Gurat, Salles Lavalette, route des crêtes à droite sur D19, à gauche sur D450, à droite dir. Ronsenac avant pont de chemin de fer, route des crêtes à gauche Juillaguet, le Roc, Fouquebrune, Puymard, à droite Torsac, Combe de Loup, Puymoyen."
     },
     {
@@ -934,7 +842,6 @@
       ],
       "name": "Champagne Fontaine",
       "distanceKm": 71,
-      "garminUrl": "https://connect.garmin.com/modern/course/83050461",
       "itinerary": "Puymoyen, Dirac, Torsac, Mercerie, dir. Villebois sur D5, rond point à droite, en face Gendarmerie, Tennis, en face sur D23 dir. Fontaine, à gauche dir. Blanzaguet, à droite Pas de Fontaine, à gauche, 100 m à droite, à gauche dir. Champagne, silo, Eglise, à droite dir. Vendoire, Vendoire à droite dir. Gurat, à droite, Gurat, à gauche dir. Ronsenac, l’Ombre, Torsac, Dirac, Puymoyen."
     },
     {
@@ -944,7 +851,6 @@
       ],
       "name": "Chazelles",
       "distanceKm": 70,
-      "garminUrl": "https://connect.garmin.com/modern/course/81272351",
       "itinerary": "Puymoyen, Dirac, Roprie, la Laiterie, Vallée de l’échelle, à droite Beaulieu, Rougnac, Clédou, Charras, route de Feuillade, au Coufour à gauche sur Marthon, St Germain de Montbron, Chazelles, la Morandie, la Petitie, Bouex, à gauche sur D73, à droite sur D25, les grands moulins, gauche et droite route de Touvre, à gauche Garat, Ste Catherine, Puymoyen."
     },
     {
@@ -954,7 +860,6 @@
       ],
       "name": "Anais",
       "distanceKm": 67,
-      "garminUrl": "https://connect.garmin.com/modern/course/83498598",
       "itinerary": "Puymoyen, Ste Catherine, Touvre, rond point à droite dir. Mornac, rond point à gauche cimetière, routes des fontaines, les Favrauds, les Rassats, les Frauds, sur D113 la Jauvigère, à gauche Brie, à droite sur D91 Cherves, Jauldes, à gauche, Anais sur D11, à gauche sur D45 Churet, à gauche sur D23, Champniers, le Poteau, Ruelle, Vaugeline, Cimetière, Fourville, Touvre, Ste Catherine, Puymoyen."
     },
     {
@@ -964,7 +869,6 @@
       ],
       "name": "La Rochebeaucourt",
       "distanceKm": 87,
-      "garminUrl": "https://connect.garmin.com/modern/course/81842560",
       "itinerary": "Puymoyen, Dirac, Torsac, Voeuil, Sterling, à gauche dir. Mouthiers, rond pt 3e sortie sur D427, puis D42, dir. Villebois, tout droit, Juillaguet, à gauche Ronsenac, Villebois, Château, rte d’Edon D5, la Rochebeaucourt, à gauche route de Périgueux, à gauche sur D87 route de Rougnac, Rougnac, Vallée de l’Echelle, les Roches à gauche, Dignac, Château du Mas, Torsac, Dirac, Puymoyen."
     },
     {
@@ -974,7 +878,6 @@
       ],
       "name": "Marthon",
       "distanceKm": 65,
-      "garminUrl": "https://connect.garmin.com/modern/course/83056714",
       "itinerary": "Puymoyen, Dirac, la Petite Courrière, à gauche, à droite Monboeuf, à gauche sur D41, Dignac, Cloulas, Rougnac, Eglise, sur D16 Grassac, Marthon, sur D33 Rochepine, Chazelles, la Morandie, la Petitie, Bouex, avant Roprie à droite, les Grandes Tuileries, à gauche chez Forestier, Dirac, Puymoyen."
     },
     {
@@ -984,7 +887,6 @@
       ],
       "name": "Blanzaguet",
       "distanceKm": 71,
-      "garminUrl": "https://connect.garmin.com/modern/course/81849764",
       "itinerary": "Puymoyen, Dirac, Roprie, Rougnac, la Rochebeaucourt, D12, à droite les Fieux, Blanzaguet, D5, Villebois, Maison Blanche, Magnac Lavalette, D43, Fouquebrune, D122, Obevie, en face, la Marotte, dir. Torsac, Dirac, Puymoyen."
     },
     {
@@ -994,7 +896,6 @@
       ],
       "name": "Sireuil",
       "distanceKm": 72,
-      "garminUrl": "https://connect.garmin.com/modern/course/83062717",
       "itinerary": "Puymoyen, Dirac, Torsac, Voeuil, Sterling, Motocross, la Couronne, rue de la Gare, Super U, après 2e rond point après Bar, 1ère route à droite, Chemin des Barrets, après pt RN, à gauche Emmaüs, les Courtes, la Fuie, sous pont LGV, Nersac, Pont de la Meure, à gauche, les Allins sur D84, au carrefour à gauche sur D83, Cheville à droite dir. Sireuil, Sireuil, rond point à gauche, les Chateliers, à droite sur D425, à gauche route des Ribots, Fustifort à droite rue des Grands Champs, ZE, sous le pont RN10, à gauche dir. la Couronne, Motocross, Voeuil, Torsac, Dirac, Puymoyen."
     },
     {
@@ -1004,7 +905,6 @@
       ],
       "name": "Boisne la Tude",
       "distanceKm": 73,
-      "garminUrl": "https://connect.garmin.com/modern/course/83499154",
       "itinerary": "Puymoyen, Combe de Loup, Andole, les Naulets, Mouthiers, dir. Blanzac, après route de Chateauneuf, à droite dir. Plassac, Plassac, à gauche et à droite dir. Champagne Vigny, après La Charbonnière à gauche, en haut à gauche dir. Bècheresse, dir. Voulgézac, route de Blanzac, à droite et à gauche, route de Villebois, à gauche sur D5 St Acquitière, D22 Charmant Gare, D39 Charmant Bourg, à droite D123 dir. Chavenat D440, à gauche, dir. Ronsenac D16, Ronsenac, l’Ombre, Mercerie, Torsac, Dirac, Puymoyen."
     },
     {
@@ -1014,7 +914,6 @@
       ],
       "name": "Rivieres",
       "distanceKm": 68,
-      "garminUrl": "https://connect.garmin.com/modern/course/83279132",
       "itinerary": "Puymoyen, Dirac, Ste Catherine, Touvre, Passage Chemin de Fer à droite Bois Blanc, la Brouterie, rond point à droite, 1ère à gauche Rue de la Chaume, à droite sur route de l’Hermitage, à gauche sur D33, Bunzac, sortie Bourg rond point à gauche sur D389, sous pont de chemin de Fer, Puy Vidal, Rue des Grands Champs, tout droit, dir. Rivières, en face Rivières, Chez Salot, à gauche sur D88 route de Jauldes, Forêt de la Braconne, à gauche sur D12 dir. la Grande Fosse, à gauche sur D113 dir. la Jauvigère, les Frauds, les Rassats, les Favrauds, sur D113 Mornac Jardinerie, à droite Mornac, Touvre, Ste Catherine, Puymoyen."
     },
     {
@@ -1024,7 +923,6 @@
       ],
       "name": "Tour Angouleme",
       "distanceKm": 78,
-      "garminUrl": "https://connect.garmin.com/modern/course/82668131",
       "itinerary": "Puymoyen, Dirac, Torsac, Voeuil, Sterling, Motocross, la Couronne, à gauche après pt sncf, rond point à gauche et à droite avant Champs de Foire rue Victor Hugo, à droite, Super U, Route de Bordeaux à gauche, après Bar à droite Chemin de la Mondone, derrière la Pinotière, route du Grand Maine à gauche, dir. Nersac, à droite et à gauche au rond point, ZE Nersac, Pont de la Meure, à gauche sur D41, Villars, à droite, St Saturnin, dans bourg à droite dir. Linars, à gauche avant Pont LGV, traverser village Marteau à gauche sur D120, rue de la Grelière, rester sur D37, Echangeur Brénat, rester sur D37,en face, Vindelle, à droite Balzac, gauche droite, Vouillac, Champniers, Poteau, Ruelle, Vaugeline, Cimetière, Fourville, Touvre, Ste Catherine, Dirac, Puymoyen."
     },
     {
@@ -1034,7 +932,6 @@
       ],
       "name": "Boisne la Tude",
       "distanceKm": 65,
-      "garminUrl": "https://connect.garmin.com/modern/course/83322433",
       "itinerary": "Puymoyen, Dirac, Torsac, Château de la Mercerie à droite dir. Fouquebrune, à gauche le Roc, à droite sur D5 dir. Chateauneuf, après carrefour à gauche dir. Boisné la Tude (Charmant), tout droit, à gauche Charmant Gare, Silo, à droite sur D674, à gauche dir. Blanzac avant pont chemin de fer, St Acquittière, dir. Blanzac, en haut, à droite sur D12 Mouthiers, rond point des chevaux, Sterling, Voeuil, Torsac, Dirac, Puymoyen."
     },
     {
@@ -1044,7 +941,6 @@
       ],
       "name": "Dignac",
       "distanceKm": 70,
-      "garminUrl": "https://connect.garmin.com/modern/course/81271032",
       "itinerary": "Puymoyen, Dirac, dir. Torsac, la Petite Courrière à gauche, à droite Momboeuf, à droite Torsac, Torsac, à gauche et à droite sur D101, Puymard à gauche Fouquebrune, à gauche dir. Dignac, Obévie, en face au carrefour, la Marotte, Dignac, Cloulas, Rougnac, sur D87 Vallée de l’échelle, à droite dir. Sers, en haut à droite au rond point et à gauche Vieux Vouzan, Vouzan, à gauche sur D412 dir. Chazelles, à gauche sur D4 route d’Angoulême, la Petitie, Bouex, à gauche dans virage, Roprie, Dirac, Puymoyen."
     },
     {
@@ -1054,7 +950,6 @@
       ],
       "name": "Claix",
       "distanceKm": 71,
-      "garminUrl": "https://connect.garmin.com/modern/course/83283718",
       "itinerary": "Puymoyen, Dirac, Torsac, à gauche, à droite dir. Etang Genevreau, à droite sur D42 dir. Mouthiers, à gauche Cimetière, à droite Gersac, Plassac, sur D107 les Aireaux, à droite sur D7, Claix, Roullet, ancienne RN, la Couronne, Super U, Rue du Stade, Lippi, rond point des Chevaux, à gauche, Sterling, Voeuil, Torsac, Dirac, Puymoyen."
     }
   ]

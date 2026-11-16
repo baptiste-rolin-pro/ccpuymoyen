@@ -1,10 +1,9 @@
 import Link from "next/link";
-import { ArrowRight, Clock, Download, HardHat, MapPin, Navigation } from "lucide-react";
+import { ArrowRight, Clock, HardHat, Lock, MapPin, Navigation } from "lucide-react";
 import { SectionHeading } from "@/components/SectionHeading";
 import { UpcomingOutings } from "@/components/UpcomingOutings";
 import { calendarSource, outingDays, todayISO } from "@/lib/sorties";
 import { mapsUrl, site } from "@/data/site";
-import { withBase } from "@/lib/format";
 
 export function NextRides() {
   // sorties restantes à la date de génération, sans itinéraires (allège le JS client)
@@ -71,9 +70,9 @@ export function NextRides() {
           <div className="lg:col-span-8" data-reveal style={{ ["--delay" as string]: "120ms" }}>
             <div className="mb-4 flex flex-wrap items-end justify-between gap-3">
               <h3 className="font-display text-2xl font-bold uppercase">Les samedis à venir</h3>
-              <a href={withBase(calendarSource.document)} className="arrow-link text-sm text-ink" download>
-                <Download aria-hidden size={16} /> Parcours 2026 (PDF, 119 Ko)
-              </a>
+              <Link href="/espace-membre/" className="arrow-link text-sm text-ink">
+                <Lock aria-hidden size={16} /> Parcours à télécharger : espace membres
+              </Link>
             </div>
             <UpcomingOutings days={remaining} />
             <p className="mt-4 text-sm text-mute">
